@@ -1,0 +1,128 @@
+name: aeternitas-v1
+x-app: &app
+  image: aeternitas:1.0-local
+  build:
+    context: .
+    network: host
+    entitlements: [network.host]
+    # Docker's predefined proxy args are build-only and excluded from image
+    # ENV/history. Host network makes a WSL loopback proxy reachable by pip.
+    args:
+      HTTP_PROXY: ${HTTP_PROXY:-}
+      HTTPS_PROXY: ${HTTPS_PROXY:-}
+      ALL_PROXY: ${ALL_PROXY:-}
+      NO_PROXY: ${NO_PROXY:-localhost,127.0.0.1,::1}
+      http_proxy: ${http_proxy:-}
+      https_proxy: ${https_proxy:-}
+      all_proxy: ${all_proxy:-}
+      no_proxy: ${no_proxy:-localhost,127.0.0.1,::1}
+  network_mode: host
+  user: "1000:1000"
+  init: true
+  read_only: true
+  tmpfs: ["/tmp:rw,noexec,nosuid,size=32m"]
+  environment: &environment
+    HOME: /state
+    AETERNITAS_DATA_DIR: /data
+    AETERNITAS_DB_PASSWORD_FILE: /run/secrets/postgres_password
+    AETERNITAS_DB_PORT: ${AETERNITAS_DB_PORT:-55432}
+    AETERNITAS_CONFIG_FILE: /run/secrets/aeternitas_config
+    AETERNITAS_API_PORT: ${AETERNITAS_API_PORT:-8767}
+    NO_PROXY: localhost,127.0.0.1,::1
+    no_proxy: localhost,127.0.0.1,::1
+  secrets: [postgres_password, aeternitas_config]
+  volumes: [research-data:/data, local-state:/state]
+  security_opt: ["no-new-privileges:true"]
+  cap_drop: [ALL]
+
+services:
+  postgres:
+    image: postgres:18.6-bookworm
+    network_mode: host
+    command: [postgres, -c, "listen_addresses=127.0.0.1", -p, "${AETERNITAS_DB_PORT:-55432}"]
+    environment:
+      POSTGRES_DB: aeternitas
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD_FILE: /run/secrets/postgres_password
+      POSTGRES_INITDB_ARGS: --auth-host=scram-sha-256
+    secrets: [postgres_password]
+    volumes:
+      - postgres-data:/var/lib/postgresql
+      - ./config/postgres-init.sh:/docker-entrypoint-initdb.d/010-app-role.sh:ro
+    healthcheck:
+      test: [CMD-SHELL, "pg_isready -h 127.0.0.1 -p ${AETERNITAS_DB_PORT:-55432} -U aeternitas -d aeternitas"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+      start_period: 10s
+    restart: unless-stopped
+  migrate:
+    <<: *app
+    command: [migrate]
+    depends_on:
+      postgres: {condition: service_healthy}
+    restart: "no"
+  api:
+    <<: *app
+    command: [api]
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+    healthcheck:
+      test: [CMD, python, scripts/container_app.py, health]
+      interval: 3s
+      timeout: 5s
+      retries: 20
+      start_period: 5s
+    restart: unless-stopped
+  worker:
+    <<: *app
+    command: [worker]
+    depends_on:
+      api: {condition: service_healthy}
+    healthcheck:
+      test: [CMD, python, -c, "import os; from pathlib import Path; os.kill(int(Path('/tmp/aeternitas-worker-ready').read_text()), 0)"]
+      interval: 5s
+      timeout: 3s
+      retries: 3
+    restart: unless-stopped
+  worker-live:
+    <<: *app
+    profiles: [live]
+    command: [worker, --enable-execution]
+    depends_on:
+      api: {condition: service_healthy}
+    volumes:
+      - research-data:/data
+      - local-state:/state
+      - oauth-state:/state/.config/aeternitas
+      - type: bind
+        source: ${AETERNITAS_AUTH_DIR:-./config/container-empty-auth}
+        target: /run/chatgpt-source
+        read_only: true
+        bind: {create_host_path: false}
+    restart: unless-stopped
+  smoke:
+    <<: *app
+    profiles: [smoke]
+    entrypoint: [python, scripts/smoke_m7.py]
+    command: [--data-dir, /synthetic/clean, --schema, m7_compose_smoke, --port, "8787"]
+    environment:
+      <<: *environment
+      HOME: /synthetic/home
+      PYTHONPATH: /app/scripts/offline_guard:/app
+    volumes: [synthetic-data:/synthetic]
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+    restart: "no"
+
+secrets:
+  postgres_password:
+    file: ${AETERNITAS_DB_PASSWORD_FILE:?Run scripts/container_init.py and pass its compose.env with --env-file}
+  aeternitas_config:
+    file: ${AETERNITAS_LIVE_CONFIG_FILE:-./config/container.env.example}
+volumes:
+  postgres-data:
+  research-data:
+  local-state:
+  oauth-state:
+  synthetic-data:

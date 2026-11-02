@@ -1,0 +1,122 @@
+{
+  "version": "m7-synthetic-sources-v1",
+  "provenance": "Constructed synthetic data, not real SEC or Finnhub content.",
+  "financials": {
+    "cik": 320193,
+    "entityName": "Synthetic Example (NOT real financial data)",
+    "facts": {
+      "us-gaap": {
+        "RevenueFromContractWithCustomerExcludingAssessedTax": {
+          "units": {
+            "USD": [
+              {
+                "start": "2023-01-01",
+                "end": "2023-12-31",
+                "val": 100,
+                "accn": "0000320193-25-000001",
+                "form": "10-K",
+                "filed": "2025-02-01",
+                "fy": 2024
+              },
+              {
+                "start": "2024-01-01",
+                "end": "2024-12-31",
+                "val": 120,
+                "accn": "0000320193-25-000001",
+                "form": "10-K",
+                "filed": "2025-02-01",
+                "fy": 2024
+              }
+            ]
+          }
+        },
+        "OperatingIncomeLoss": {
+          "units": {
+            "USD": [
+              {
+                "start": "2023-01-01",
+                "end": "2023-12-31",
+                "val": 0,
+                "accn": "0000320193-25-000001",
+                "form": "10-K",
+                "filed": "2025-02-01",
+                "fy": 2024
+              },
+              {
+                "start": "2024-01-01",
+                "end": "2024-12-31",
+                "val": 30,
+                "accn": "0000320193-25-000001",
+                "form": "10-K",
+                "filed": "2025-02-01",
+                "fy": 2024
+              }
+            ]
+          }
+        },
+        "NetIncomeLoss": {
+          "units": {
+            "USD": [
+              {
+                "start": "2023-01-01",
+                "end": "2023-12-31",
+                "val": 10,
+                "accn": "0000320193-25-000001",
+                "form": "10-K",
+                "filed": "2025-02-01",
+                "fy": 2024
+              },
+              {
+                "start": "2024-01-01",
+                "end": "2024-12-31",
+                "val": -6,
+                "accn": "0000320193-25-000001",
+                "form": "10-K",
+                "filed": "2025-02-01",
+                "fy": 2024
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "submissions": {
+    "cik": "320193",
+    "filings": {
+      "recent": {
+        "accessionNumber": [
+          "0000320193-25-000001",
+          "0000320193-25-000002"
+        ],
+        "form": [
+          "10-K",
+          "10-Q"
+        ],
+        "filingDate": [
+          "2025-02-01",
+          "2025-08-01"
+        ],
+        "primaryDocument": [
+          "synthetic-k.htm",
+          "synthetic-q.htm"
+        ]
+      },
+      "files": []
+    }
+  },
+  "filing_html": {
+    "10-K": "<html><body><p>Item 1A. Risk Factors</p><p>TOC</p><p>Item 7. Management Discussion</p><p>TOC</p><p>Item 1A. Risk Factors</p><p>Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. </p><p>Item 7. Management Discussion</p><p>Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. </p><p>Item 9. Other Information</p></body></html>",
+    "10-Q": "<html><body><p>Item 1A. Risk Factors</p><p>TOC</p><p>Item 2. Management Discussion</p><p>TOC</p><p>Item 1A. Risk Factors</p><p>Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. Synthetic business risk, not a real filing. </p><p>Item 2. Management Discussion</p><p>Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. Synthetic operating discussion, not real financial data. </p><p>Item 9. Other Information</p></body></html>"
+  },
+  "news": [
+    {
+      "id": 1,
+      "datetime": 1759233600,
+      "headline": "Synthetic announcement (NOT real news)",
+      "summary": "Synthetic provider summary; not actual company news.",
+      "related": "AAPL",
+      "url": "https://example.invalid/synthetic-news"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema_version": "m5-recorded-crash-shapes-v1",
+  "provenance": {
+    "source_artifact": "data/live/m5/live-acceptance.json",
+    "source_sha256": "8cd089a8ce1e93390d1eecc73a340fafd94c6fab4dc49a801fec124d2909ec28",
+    "source_run_id": "379073942801443698b541bb7c913124",
+    "source_schema_version": "m5-live-acceptance-v1",
+    "source_execution": "real ChatGPT subscription model calls; worker os._exit(97); natural lease expiry",
+    "captured_date": "2026-10-23",
+    "sanitization": "Retains state and ledger enums only; excludes text, credentials, response identifiers, owner tokens and checkpoint paths."
+  },
+  "replay": {
+    "execution": "synthetic transports and managed SystemExit; PostgreSQL real isolated schema",
+    "comparison": "Capture the running state immediately before the synthetic exit; managed cleanup yields the same interrupted ledger shape as the recorded natural expiry.",
+    "budget_scope": "Each case replays one fault independently with four roles; expected five calls. This is not the combined recorded live run, which consumed seven calls across multiple faults and repair."
+  },
+  "cases": [
+    {
+      "source_stage": "fundamentals-after-request",
+      "event": "after_request",
+      "role": "fundamentals",
+      "role_attempt": 1,
+      "process_exit_code": 97,
+      "after_process": {
+        "status": "running",
+        "ledger_status": "reserved",
+        "usage_status": null,
+        "role_checkpoint_saved": false
+      },
+      "after_natural_expiry": {
+        "status": "interrupted",
+        "ledger_status": "unknown",
+        "usage_status": "network_unknown",
+        "role_checkpoint_saved": false
+      },
+      "acknowledge_unknown_used": true,
+      "requires_acknowledgement": true,
+      "report_http_before_resume": 409,
+      "expected_totalcalls_after_onefault_resume": 5
+    },
+    {
+      "source_stage": "events-after-response",
+      "event": "after_response",
+      "role": "events",
+      "role_attempt": 1,
+      "process_exit_code": 97,
+      "after_process": {
+        "status": "running",
+        "ledger_status": "completed",
+        "usage_status": "completed",
+        "role_checkpoint_saved": false
+      },
+      "after_natural_expiry": {
+        "status": "interrupted",
+        "ledger_status": "completed",
+        "usage_status": "completed",
+        "role_checkpoint_saved": false
+      },
+      "acknowledge_unknown_used": true,
+      "requires_acknowledgement": true,
+      "report_http_before_resume": 409,
+      "expected_totalcalls_after_onefault_resume": 5
+    }
+  ]
+}

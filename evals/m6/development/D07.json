@@ -1,0 +1,565 @@
+{
+  "case_version": "m6-case-v1",
+  "id": "D07",
+  "split": "development",
+  "company": "AAPL",
+  "description": "News scopes and time zone filtering remain explicit; a valid quote with irrelevant meaning is never certified as support.",
+  "material": {
+    "mode": "synthetic",
+    "notice": "Controlled invented observations; not actual financial data, news or model output."
+  },
+  "scenarios": [
+    {
+      "id": "fundamentals-scope",
+      "operation": "select_evidence",
+      "input": {
+        "ticker": "AAPL",
+        "cik": "0000320193",
+        "as_of_date": "2025-10-01",
+        "question": "经营增长与风险来自哪里？",
+        "evidence": [
+          {
+            "id": "F-scope-fact",
+            "kind": "financial_fact",
+            "company_cik": "0000320193",
+            "title": "Controlled annual revenue",
+            "text": "Synthetic annual revenue declined while supply costs remained elevated.",
+            "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
+            "source": {
+              "retrieval_id": "11111111111111111111111111111111",
+              "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+              "size_bytes": 123,
+              "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
+              "cik": "0000320193",
+              "fetched_at": "2025-10-01T00:00:00+00:00",
+              "snapshot_path": "snapshots/controlled-financial.json",
+              "data_mode": "controlled_evaluation"
+            },
+            "published_at": "2025-02-01",
+            "time_precision": "date",
+            "locator": {
+              "filed_at": "2025-02-01",
+              "fact_id": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+            }
+          },
+          {
+            "id": "N-scope-news",
+            "kind": "news",
+            "company_cik": "0000320193",
+            "title": "Controlled supply concern",
+            "text": "Recurring supply concerns remain unresolved in the provider summary.",
+            "text_level": "provider_summary",
+            "source_url": "https://example.invalid/controlled-supply",
+            "published_at": "2025-09-30T12:00:00+00:00",
+            "time_precision": "second",
+            "locator": {
+              "company_match": "provider_query_only"
+            },
+            "source": {
+              "retrieval_id": "22222222222222222222222222222222",
+              "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+              "size_bytes": 123,
+              "source_url": "https://finnhub.io/api/v1/company-news",
+              "query": {
+                "symbol": "AAPL",
+                "from": "2025-09-17",
+                "to": "2025-10-01"
+              },
+              "fetched_at": "2025-10-01T00:00:00+00:00",
+              "snapshot_path": "snapshots/controlled-news.bin",
+              "data_mode": "controlled_evaluation"
+            }
+          }
+        ],
+        "role": "fundamentals"
+      },
+      "expected": {
+        "outcome": "accepted",
+        "matches": {
+          "/manifest/selected_evidence_ids": [
+            "F-scope-fact"
+          ],
+          "/manifest/policy/ranking_is_support_validation": false
+        }
+      }
+    },
+    {
+      "id": "events-news-scope",
+      "operation": "select_evidence",
+      "input": {
+        "ticker": "AAPL",
+        "cik": "0000320193",
+        "as_of_date": "2025-10-01",
+        "question": "经营增长与风险来自哪里？",
+        "evidence": [
+          {
+            "id": "F-scope-fact",
+            "kind": "financial_fact",
+            "company_cik": "0000320193",
+            "title": "Controlled annual revenue",
+            "text": "Synthetic annual revenue declined while supply costs remained elevated.",
+            "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
+            "source": {
+              "retrieval_id": "11111111111111111111111111111111",
+              "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+              "size_bytes": 123,
+              "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
+              "cik": "0000320193",
+              "fetched_at": "2025-10-01T00:00:00+00:00",
+              "snapshot_path": "snapshots/controlled-financial.json",
+              "data_mode": "controlled_evaluation"
+            },
+            "published_at": "2025-02-01",
+            "time_precision": "date",
+            "locator": {
+              "filed_at": "2025-02-01",
+              "fact_id": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+            }
+          },
+          {
+            "id": "N-scope-news",
+            "kind": "news",
+            "company_cik": "0000320193",
+            "title": "Controlled supply concern",
+            "text": "Recurring supply concerns remain unresolved in the provider summary.",
+            "text_level": "provider_summary",
+            "source_url": "https://example.invalid/controlled-supply",
+            "published_at": "2025-09-30T12:00:00+00:00",
+            "time_precision": "second",
+            "locator": {
+              "company_match": "provider_query_only"
+            },
+            "source": {
+              "retrieval_id": "22222222222222222222222222222222",
+              "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+              "size_bytes": 123,
+              "source_url": "https://finnhub.io/api/v1/company-news",
+              "query": {
+                "symbol": "AAPL",
+                "from": "2025-09-17",
+                "to": "2025-10-01"
+              },
+              "fetched_at": "2025-10-01T00:00:00+00:00",
+              "snapshot_path": "snapshots/controlled-news.bin",
+              "data_mode": "controlled_evaluation"
+            }
+          }
+        ],
+        "role": "events"
+      },
+      "expected": {
+        "outcome": "accepted",
+        "matches": {
+          "/manifest/selected_evidence_ids": [
+            "N-scope-news"
+          ],
+          "/selected/0/text_level": "provider_summary",
+          "/selected/0/locator/company_match": "provider_query_only"
+        }
+      }
+    },
+    {
+      "id": "semantic-irrelevance-boundary",
+      "operation": "analysis_checks",
+      "input": {
+        "analyses": {
+          "fundamentals": {
+            "claims": [],
+            "gaps": [
+              "本角色没有提供新闻，只能讨论财务事实"
+            ]
+          },
+          "events": {
+            "claims": [
+              {
+                "text": "公司研发生产力已经显著提升",
+                "stance": "support",
+                "citations": [
+                  {
+                    "evidence_id": "N-scope-news",
+                    "quote": "Recurring supply concerns remain unresolved"
+                  }
+                ]
+              }
+            ],
+            "gaps": []
+          },
+          "risk": {
+            "claims": [
+              {
+                "text": "公司研发生产力已经显著提升",
+                "stance": "support",
+                "citations": [
+                  {
+                    "evidence_id": "N-scope-news",
+                    "quote": "Recurring supply concerns remain unresolved"
+                  }
+                ]
+              }
+            ],
+            "gaps": []
+          },
+          "synthesis": {
+            "claims": [
+              {
+                "text": "公司研发生产力已经显著提升",
+                "stance": "support",
+                "citations": [
+                  {
+                    "evidence_id": "N-scope-news",
+                    "quote": "Recurring supply concerns remain unresolved"
+                  }
+                ]
+              }
+            ],
+            "gaps": []
+          }
+        },
+        "chosen": {
+          "fundamentals": [
+            {
+              "id": "F-scope-fact",
+              "kind": "financial_fact",
+              "company_cik": "0000320193",
+              "title": "Controlled annual revenue",
+              "text": "Synthetic annual revenue declined while supply costs remained elevated.",
+              "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
+              "source": {
+                "retrieval_id": "11111111111111111111111111111111",
+                "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "size_bytes": 123,
+                "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
+                "cik": "0000320193",
+                "fetched_at": "2025-10-01T00:00:00+00:00",
+                "snapshot_path": "snapshots/controlled-financial.json",
+                "data_mode": "controlled_evaluation"
+              },
+              "published_at": "2025-02-01",
+              "time_precision": "date",
+              "locator": {
+                "filed_at": "2025-02-01",
+                "fact_id": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+              }
+            }
+          ],
+          "events": [
+            {
+              "id": "N-scope-news",
+              "kind": "news",
+              "company_cik": "0000320193",
+              "title": "Controlled supply concern",
+              "text": "Recurring supply concerns remain unresolved in the provider summary.",
+              "text_level": "provider_summary",
+              "source_url": "https://example.invalid/controlled-supply",
+              "published_at": "2025-09-30T12:00:00+00:00",
+              "time_precision": "second",
+              "locator": {
+                "company_match": "provider_query_only"
+              },
+              "source": {
+                "retrieval_id": "22222222222222222222222222222222",
+                "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+                "size_bytes": 123,
+                "source_url": "https://finnhub.io/api/v1/company-news",
+                "query": {
+                  "symbol": "AAPL",
+                  "from": "2025-09-17",
+                  "to": "2025-10-01"
+                },
+                "fetched_at": "2025-10-01T00:00:00+00:00",
+                "snapshot_path": "snapshots/controlled-news.bin",
+                "data_mode": "controlled_evaluation"
+              }
+            }
+          ],
+          "risk": [
+            {
+              "id": "F-scope-fact",
+              "kind": "financial_fact",
+              "company_cik": "0000320193",
+              "title": "Controlled annual revenue",
+              "text": "Synthetic annual revenue declined while supply costs remained elevated.",
+              "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
+              "source": {
+                "retrieval_id": "11111111111111111111111111111111",
+                "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "size_bytes": 123,
+                "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
+                "cik": "0000320193",
+                "fetched_at": "2025-10-01T00:00:00+00:00",
+                "snapshot_path": "snapshots/controlled-financial.json",
+                "data_mode": "controlled_evaluation"
+              },
+              "published_at": "2025-02-01",
+              "time_precision": "date",
+              "locator": {
+                "filed_at": "2025-02-01",
+                "fact_id": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+              }
+            },
+            {
+              "id": "N-scope-news",
+              "kind": "news",
+              "company_cik": "0000320193",
+              "title": "Controlled supply concern",
+              "text": "Recurring supply concerns remain unresolved in the provider summary.",
+              "text_level": "provider_summary",
+              "source_url": "https://example.invalid/controlled-supply",
+              "published_at": "2025-09-30T12:00:00+00:00",
+              "time_precision": "second",
+              "locator": {
+                "company_match": "provider_query_only"
+              },
+              "source": {
+                "retrieval_id": "22222222222222222222222222222222",
+                "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+                "size_bytes": 123,
+                "source_url": "https://finnhub.io/api/v1/company-news",
+                "query": {
+                  "symbol": "AAPL",
+                  "from": "2025-09-17",
+                  "to": "2025-10-01"
+                },
+                "fetched_at": "2025-10-01T00:00:00+00:00",
+                "snapshot_path": "snapshots/controlled-news.bin",
+                "data_mode": "controlled_evaluation"
+              }
+            }
+          ],
+          "synthesis": [
+            {
+              "id": "F-scope-fact",
+              "kind": "financial_fact",
+              "company_cik": "0000320193",
+              "title": "Controlled annual revenue",
+              "text": "Synthetic annual revenue declined while supply costs remained elevated.",
+              "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
+              "source": {
+                "retrieval_id": "11111111111111111111111111111111",
+                "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "size_bytes": 123,
+                "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
+                "cik": "0000320193",
+                "fetched_at": "2025-10-01T00:00:00+00:00",
+                "snapshot_path": "snapshots/controlled-financial.json",
+                "data_mode": "controlled_evaluation"
+              },
+              "published_at": "2025-02-01",
+              "time_precision": "date",
+              "locator": {
+                "filed_at": "2025-02-01",
+                "fact_id": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+              }
+            },
+            {
+              "id": "N-scope-news",
+              "kind": "news",
+              "company_cik": "0000320193",
+              "title": "Controlled supply concern",
+              "text": "Recurring supply concerns remain unresolved in the provider summary.",
+              "text_level": "provider_summary",
+              "source_url": "https://example.invalid/controlled-supply",
+              "published_at": "2025-09-30T12:00:00+00:00",
+              "time_precision": "second",
+              "locator": {
+                "company_match": "provider_query_only"
+              },
+              "source": {
+                "retrieval_id": "22222222222222222222222222222222",
+                "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+                "size_bytes": 123,
+                "source_url": "https://finnhub.io/api/v1/company-news",
+                "query": {
+                  "symbol": "AAPL",
+                  "from": "2025-09-17",
+                  "to": "2025-10-01"
+                },
+                "fetched_at": "2025-10-01T00:00:00+00:00",
+                "snapshot_path": "snapshots/controlled-news.bin",
+                "data_mode": "controlled_evaluation"
+              }
+            }
+          ]
+        }
+      },
+      "expected": {
+        "outcome": "accepted",
+        "matches": {
+          "/semantic_support": "human_review_required",
+          "/research_quality": "not_automatically_certified",
+          "/hard_checks/exact_quotation": "passed"
+        }
+      },
+      "manual_review": {
+        "reviewer": "assistant_engineering_review",
+        "scope": "controlled_synthetic",
+        "verdict": "unsupported",
+        "rationale": "Supply concern text gives no evidence of research productivity improvement. Exact quote membership is true; semantic support is false. A human must reject this interpretation.",
+        "source_locations": [
+          {
+            "evidence_id": "N-scope-news",
+            "quote": "Recurring supply concerns remain unresolved"
+          }
+        ],
+        "conclusion_boundary": "Passing automatic hard checks must continue to say human_review_required; no automatic entailment or quality certification."
+      }
+    },
+    {
+      "id": "risk-sees-prior-role-scope",
+      "operation": "prompt_scope",
+      "input": {
+        "ticker": "AAPL",
+        "cik": "0000320193",
+        "as_of_date": "2025-10-01",
+        "question": "经营增长与风险来自哪里？",
+        "evidence": [
+          {
+            "id": "F-scope-fact",
+            "kind": "financial_fact",
+            "company_cik": "0000320193",
+            "title": "Controlled annual revenue",
+            "text": "Synthetic annual revenue declined while supply costs remained elevated.",
+            "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
+            "source": {
+              "retrieval_id": "11111111111111111111111111111111",
+              "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+              "size_bytes": 123,
+              "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
+              "cik": "0000320193",
+              "fetched_at": "2025-10-01T00:00:00+00:00",
+              "snapshot_path": "snapshots/controlled-financial.json",
+              "data_mode": "controlled_evaluation"
+            },
+            "published_at": "2025-02-01",
+            "time_precision": "date",
+            "locator": {
+              "filed_at": "2025-02-01",
+              "fact_id": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+            }
+          },
+          {
+            "id": "N-scope-news",
+            "kind": "news",
+            "company_cik": "0000320193",
+            "title": "Controlled supply concern",
+            "text": "Recurring supply concerns remain unresolved in the provider summary.",
+            "text_level": "provider_summary",
+            "source_url": "https://example.invalid/controlled-supply",
+            "published_at": "2025-09-30T12:00:00+00:00",
+            "time_precision": "second",
+            "locator": {
+              "company_match": "provider_query_only"
+            },
+            "source": {
+              "retrieval_id": "22222222222222222222222222222222",
+              "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+              "size_bytes": 123,
+              "source_url": "https://finnhub.io/api/v1/company-news",
+              "query": {
+                "symbol": "AAPL",
+                "from": "2025-09-17",
+                "to": "2025-10-01"
+              },
+              "fetched_at": "2025-10-01T00:00:00+00:00",
+              "snapshot_path": "snapshots/controlled-news.bin",
+              "data_mode": "controlled_evaluation"
+            }
+          }
+        ],
+        "role": "risk",
+        "previous": {
+          "fundamentals": {
+            "claims": [],
+            "gaps": [
+              "本角色没有提供新闻，只能讨论财务事实"
+            ]
+          },
+          "events": {
+            "claims": [
+              {
+                "text": "公司研发生产力已经显著提升",
+                "stance": "support",
+                "citations": [
+                  {
+                    "evidence_id": "N-scope-news",
+                    "quote": "Recurring supply concerns remain unresolved"
+                  }
+                ]
+              }
+            ],
+            "gaps": []
+          }
+        }
+      },
+      "expected": {
+        "outcome": "accepted",
+        "matches": {
+          "/payload/input_evidence_scope/coverage": "this_role_only_not_global_company_coverage",
+          "/payload/prior_analysis_scopes/events/allowed_evidence_kinds": [
+            "news"
+          ],
+          "/payload/prior_analysis_scopes/fundamentals/allowed_evidence_kinds": [
+            "financial_fact",
+            "calculation",
+            "filing"
+          ]
+        }
+      }
+    },
+    {
+      "id": "news-cutoff-association-and-dedupe",
+      "operation": "normalize_news",
+      "input": {
+        "rows": [
+          {
+            "id": 1,
+            "datetime": 1759334399,
+            "related": "AAPL",
+            "headline": "Synthetic event",
+            "summary": "Controlled summary, not actual news.",
+            "url": "https://example.invalid/on-cutoff?utm_source=x"
+          },
+          {
+            "id": 2,
+            "datetime": 1759334400,
+            "related": "AAPL",
+            "headline": "Synthetic event",
+            "summary": "Controlled summary, not actual news.",
+            "url": "https://example.invalid/future"
+          },
+          {
+            "id": 3,
+            "datetime": 1759226400,
+            "related": "MSFT",
+            "headline": "Synthetic event",
+            "summary": "Controlled summary, not actual news.",
+            "url": "https://example.invalid/other-company"
+          },
+          {
+            "id": 4,
+            "datetime": 1759334398,
+            "related": "AAPL",
+            "headline": "Synthetic event",
+            "summary": "Controlled summary, not actual news.",
+            "url": "https://example.invalid/on-cutoff"
+          }
+        ],
+        "ticker": "AAPL",
+        "cik": "0000320193",
+        "as_of_date": "2025-10-01",
+        "days": 14
+      },
+      "expected": {
+        "outcome": "accepted",
+        "matches": {
+          "/0/locator/response_index": 0,
+          "/0/locator/company_match": "related_field",
+          "/0/locator/canonical_url": "https://example.invalid/on-cutoff"
+        },
+        "absent": [
+          "/1"
+        ]
+      }
+    }
+  ]
+}

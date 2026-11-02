@@ -1,0 +1,169 @@
+{
+  "case_version": "m6-case-v1",
+  "id": "D02",
+  "split": "development",
+  "company": "MSFT",
+  "description": "Frozen SEC observations reproduce two annual revenue periods, margins and growth with company identity.",
+  "material": {
+    "mode": "derived_public_snapshot",
+    "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json",
+    "original_snapshot_sha256": "f8aae2965b20ad0df44bdf7ccbedf797d275b6b8dc030154a7a311361bb7246f",
+    "original_snapshot_path": "snapshots/companyfacts/0000789019/f8aae2965b20ad0df44bdf7ccbedf797d275b6b8dc030154a7a311361bb7246f.json",
+    "origin_run_id": "b2fc146160954ef2854b11287ef36e2f",
+    "derivative_scope": "Only the six exact annual observations used by the verified report; this is not a fresh live request or full SEC snapshot.",
+    "observation_mapping": [
+      {
+        "original_json_pointer": "/facts/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax/units/USD/127",
+        "derivative_json_pointer": "/facts/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax/units/USD/0",
+        "observation_sha256": "1aaf8641c3469d6dfc71792575a11bb13c36f2e0fecaff9a1207642f11d442a6"
+      },
+      {
+        "original_json_pointer": "/facts/us-gaap/OperatingIncomeLoss/units/USD/271",
+        "derivative_json_pointer": "/facts/us-gaap/OperatingIncomeLoss/units/USD/0",
+        "observation_sha256": "a9018114fab48527a3c637d29ee2ad76e1c2e5bcfa3f3f20d50139edbd735057"
+      },
+      {
+        "original_json_pointer": "/facts/us-gaap/NetIncomeLoss/units/USD/333",
+        "derivative_json_pointer": "/facts/us-gaap/NetIncomeLoss/units/USD/0",
+        "observation_sha256": "ebf6cbc5043b726d763260cc535db47e740580cf337d3ddfee51f53a81e7bd3d"
+      },
+      {
+        "original_json_pointer": "/facts/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax/units/USD/133",
+        "derivative_json_pointer": "/facts/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax/units/USD/1",
+        "observation_sha256": "e40ec0fb0d044b51fc8d119b13749e00231f47d7b584d615d0ffab0dcfc362cf"
+      },
+      {
+        "original_json_pointer": "/facts/us-gaap/OperatingIncomeLoss/units/USD/277",
+        "derivative_json_pointer": "/facts/us-gaap/OperatingIncomeLoss/units/USD/1",
+        "observation_sha256": "94a4569e3586d9ed154bfb836315a6857816673f549c9b77a23ac53b4dbe91e8"
+      },
+      {
+        "original_json_pointer": "/facts/us-gaap/NetIncomeLoss/units/USD/339",
+        "derivative_json_pointer": "/facts/us-gaap/NetIncomeLoss/units/USD/1",
+        "observation_sha256": "6ef837081f23b7f89662a6c761da9ee0e491e2f496a0df968482f0793f1394e0"
+      }
+    ],
+    "original_bytes_checked_during_freeze": true
+  },
+  "scenarios": [
+    {
+      "id": "annual-values-and-calculations",
+      "operation": "financial_summary",
+      "input": {
+        "raw": {
+          "cik": 789019,
+          "entityName": "MICROSOFT CORPORATION",
+          "facts": {
+            "us-gaap": {
+              "RevenueFromContractWithCustomerExcludingAssessedTax": {
+                "units": {
+                  "USD": [
+                    {
+                      "start": "2024-07-01",
+                      "end": "2025-06-30",
+                      "val": 281724000000,
+                      "accn": "0001193125-26-323660",
+                      "fy": 2026,
+                      "fp": "FY",
+                      "form": "10-K",
+                      "filed": "2026-07-29",
+                      "frame": "CY2025"
+                    },
+                    {
+                      "start": "2025-07-01",
+                      "end": "2026-06-30",
+                      "val": 331839000000,
+                      "accn": "0001193125-26-323660",
+                      "fy": 2026,
+                      "fp": "FY",
+                      "form": "10-K",
+                      "filed": "2026-07-29",
+                      "frame": "CY2026"
+                    }
+                  ]
+                }
+              },
+              "OperatingIncomeLoss": {
+                "units": {
+                  "USD": [
+                    {
+                      "start": "2024-07-01",
+                      "end": "2025-06-30",
+                      "val": 128528000000,
+                      "accn": "0001193125-26-323660",
+                      "fy": 2026,
+                      "fp": "FY",
+                      "form": "10-K",
+                      "filed": "2026-07-29",
+                      "frame": "CY2025"
+                    },
+                    {
+                      "start": "2025-07-01",
+                      "end": "2026-06-30",
+                      "val": 155237000000,
+                      "accn": "0001193125-26-323660",
+                      "fy": 2026,
+                      "fp": "FY",
+                      "form": "10-K",
+                      "filed": "2026-07-29",
+                      "frame": "CY2026"
+                    }
+                  ]
+                }
+              },
+              "NetIncomeLoss": {
+                "units": {
+                  "USD": [
+                    {
+                      "start": "2024-07-01",
+                      "end": "2025-06-30",
+                      "val": 101832000000,
+                      "accn": "0001193125-26-323660",
+                      "fy": 2026,
+                      "fp": "FY",
+                      "form": "10-K",
+                      "filed": "2026-07-29",
+                      "frame": "CY2025"
+                    },
+                    {
+                      "start": "2025-07-01",
+                      "end": "2026-06-30",
+                      "val": 133749000000,
+                      "accn": "0001193125-26-323660",
+                      "fy": 2026,
+                      "fp": "FY",
+                      "form": "10-K",
+                      "filed": "2026-07-29",
+                      "frame": "CY2026"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "cik": "0000789019",
+        "as_of_date": "2026-10-21",
+        "source": {
+          "sha256": "8ad23c3dddeb34f85e2d426b2c549c6a4db9f075704b296c0b5e466c471ce3d4",
+          "data_mode": "frozen_public_derivative",
+          "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json",
+          "original_sha256": "f8aae2965b20ad0df44bdf7ccbedf797d275b6b8dc030154a7a311361bb7246f"
+        }
+      },
+      "expected": {
+        "outcome": "accepted",
+        "matches": {
+          "/cik": "0000789019",
+          "/as_of_date": "2026-10-21",
+          "/annual_periods/0/facts/revenue/value": "331839000000",
+          "/annual_periods/1/facts/revenue/value": "281724000000",
+          "/annual_periods/0/operating_margin/value": "46.78",
+          "/annual_periods/0/net_margin/value": "40.31",
+          "/revenue_yoy/value": "17.79",
+          "/source/data_mode": "frozen_public_derivative"
+        }
+      }
+    }
+  ]
+}

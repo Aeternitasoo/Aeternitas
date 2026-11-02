@@ -1,0 +1,32 @@
+name: core-offline
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  core:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13.18"
+          cache: pip
+      - name: Install locked compatibility environment and editable Core
+        run: |
+          python -m pip install -r requirements.lock setuptools==80.9.0
+          python -m pip install --no-build-isolation --no-deps -e .
+          python -m pip check
+      - name: Isolated Mem0 SDK (do not merge protobuf requirements)
+        run: |
+          python -m venv "$RUNNER_TEMP/memory"
+          "$RUNNER_TEMP/memory/bin/python" -m pip install -r requirements-memory.lock
+          "$RUNNER_TEMP/memory/bin/python" -m pip check
+          echo "AETERNITAS_MEMORY_PYTHON=$RUNNER_TEMP/memory/bin/python" >> "$GITHUB_ENV"
+      - name: Offline regression, no production credentials or database
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: |
+          test ! -e .env
+          export PYTHONPATH="$GITHUB_WORKSPACE/scripts/offline_guard:$GITHUB_WORKSPACE"
+          python -B -m pytest -q -p no:cacheprovider --ignore=test_m7_postgres_init.py --basetemp="$RUNNER_TEMP/tests"
+          python -B scripts/core_smoke.py --output "$RUNNER_TEMP/core-smoke" --memory-python "$AETERNITAS_MEMORY_PYTHON"

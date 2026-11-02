@@ -1,0 +1,27 @@
+{
+  "question": "AI云厂商资本开支增长如何传导至算力产业链和电力行业？哪些环节有经营或财务证据，哪些仍属推断？",
+  "subjects": [
+    {"symbol": "MSFT", "cik": "0000789019", "report_entity": "MICROSOFT CORPORATION"},
+    {"symbol": "NVDA", "cik": "0001045810", "report_entity": "NVIDIA CORP"},
+    {
+      "symbol": "VST", "cik": "0001692819", "report_entity": "Vistra Corp.",
+      "accepted_fact_names": ["Vistra Operations Company LLC"],
+      "identity_note": "首个案例已回查母公司申报及合并范围，原companyfacts名称存在异常。此配置保留已记录的口径说明，不构成对未来数据或每个财务值的独立认证；更换来源版本需重新复核。"
+    }
+  ],
+  "as_of_date": "2026-10-29",
+  "model": "gpt-6.1-sol",
+  "evidence_kind": "frozen_live_evidence",
+  "news_days": 30,
+  "seconds": 300,
+  "filing_terms": ["capital expenditures", "data center", "power purchase"],
+  "sections": [
+    {"id": "capex", "title": "资本开支与资金安排"},
+    {"id": "compute_cloud", "title": "算力需求与云业务"},
+    {"id": "power", "title": "电力需求与供给"},
+    {"id": "beneficiaries", "title": "产业链受益机制"},
+    {"id": "risks", "title": "资本、成本与供需风险"},
+    {"id": "boundaries", "title": "证据边界"},
+    {"id": "follow_up", "title": "后续验证指标"}
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "case_version": "m6-case-v1",
+  "split": "development",
+  "case_count": 8,
+  "frozen_at": "2026-10-23",
+  "purpose": "Project-specific hard-rule regression; semantic review is separate.",
+  "files": {
+    "D01.json": "39d5e9a990e0a8b8a26bf468aac48219821193f6b8cc2f09d0e8a604959427db",
+    "D02.json": "460a3ef2f679e582f3de4029f60712ea3079d90d76f4dc79ff9886a0c6155288",
+    "D03.json": "ef78bff59fcfe04ef97a954c4cb1891021bb771e8d05719e7ee7804380578c8e",
+    "D04.json": "1ce5fbabaf093f28200c5dd12b82afd0e18525c86c47f5348b896d4ed358a87a",
+    "D05.json": "1013c2e662ad1983e7662e06b6e4bbd5b5e7adca75fe5e10bb914e856f277134",
+    "D06.json": "282f73d05b3c501dbce917cef127f4deadee8e61dd3a4aaa04f313743f412893",
+    "D07.json": "aa9cba98fab6cef19a768f0d14a4e12c56ea8da850757568d6e31f8c88a2d145",
+    "D08.json": "d1080d6b9f42dcf9c513b102fe8879dd87ba81eb44a436d5e337d2b0b7fe397d"
+  }
+}

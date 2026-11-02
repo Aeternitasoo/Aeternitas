@@ -1,0 +1,255 @@
+{
+  "schema_version": "m2-sec-annual-subset-v1",
+  "captured_on": "2026-10-21",
+  "purpose": "Frozen public SEC subset for offline regression, not a live data source. Array indices and hashes differ from the complete original response.",
+  "companies": [
+    {
+      "ticker": "AAPL",
+      "cik": "0000320193",
+      "as_of_date": "2026-10-21",
+      "original_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
+      "original_source_sha256": "73a86c6aedc31f77cac2ea4df5f80f0b3bd7e6eb58bb4e01444fbedf3afb9c43",
+      "raw_subset": {
+        "cik": 320193,
+        "entityName": "Apple Inc.",
+        "facts": {
+          "us-gaap": {
+            "RevenueFromContractWithCustomerExcludingAssessedTax": {
+              "units": {
+                "USD": [
+                  {
+                    "start": "2024-09-29",
+                    "end": "2025-09-27",
+                    "val": 416161000000,
+                    "accn": "0000320193-25-000079",
+                    "fy": 2025,
+                    "fp": "FY",
+                    "form": "10-K",
+                    "filed": "2025-10-31",
+                    "frame": "CY2025"
+                  },
+                  {
+                    "start": "2023-10-01",
+                    "end": "2024-09-28",
+                    "val": 391035000000,
+                    "accn": "0000320193-25-000079",
+                    "fy": 2025,
+                    "fp": "FY",
+                    "form": "10-K",
+                    "filed": "2025-10-31",
+                    "frame": "CY2024"
+                  }
+                ]
+              }
+            },
+            "OperatingIncomeLoss": {
+              "units": {
+                "USD": [
+                  {
+                    "start": "2024-09-29",
+                    "end": "2025-09-27",
+                    "val": 133050000000,
+                    "accn": "0000320193-25-000079",
+                    "fy": 2025,
+                    "fp": "FY",
+                    "form": "10-K",
+                    "filed": "2025-10-31",
+                    "frame": "CY2025"
+                  },
+                  {
+                    "start": "2023-10-01",
+                    "end": "2024-09-28",
+                    "val": 123216000000,
+                    "accn": "0000320193-25-000079",
+                    "fy": 2025,
+                    "fp": "FY",
+                    "form": "10-K",
+                    "filed": "2025-10-31",
+                    "frame": "CY2024"
+                  }
+                ]
+              }
+            },
+            "NetIncomeLoss": {
+              "units": {
+                "USD": [
+                  {
+                    "start": "2024-09-29",
+                    "end": "2025-09-27",
+                    "val": 112010000000,
+                    "accn": "0000320193-25-000079",
+                    "fy": 2025,
+                    "fp": "FY",
+                    "form": "10-K",
+                    "filed": "2025-10-31",
+                    "frame": "CY2025"
+                  },
+                  {
+                    "start": "2023-10-01",
+                    "end": "2024-09-28",
+                    "val": 93736000000,
+                    "accn": "0000320193-25-000079",
+                    "fy": 2025,
+                    "fp": "FY",
+                    "form": "10-K",
+                    "filed": "2025-10-31",
+                    "frame": "CY2024"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "expected_periods": [
+        {
+          "period_start": "2024-09-29",
+          "period_end": "2025-09-27",
+          "values": {
+            "revenue": "416161000000",
+            "operating_income": "133050000000",
+            "net_income": "112010000000"
+          },
+          "operating_margin": "31.97",
+          "net_margin": "26.92"
+        },
+        {
+          "period_start": "2023-10-01",
+          "period_end": "2024-09-28",
+          "values": {
+            "revenue": "391035000000",
+            "operating_income": "123216000000",
+            "net_income": "93736000000"
+          },
+          "operating_margin": "31.51",
+          "net_margin": "23.97"
+        }
+      ],
+      "expected_revenue_yoy": "6.43"
+    },
+    {
+      "ticker": "MSFT",
+      "cik": "0000789019",
+      "as_of_date": "2026-10-21",
+      "original_source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json",
+      "original_source_sha256": "f8aae2965b20ad0df44bdf7ccbedf797d275b6b8dc030154a7a311361bb7246f",
+      "raw_subset": {
+        "cik": 789019,
+        "entityName": "MICROSOFT CORPORATION",
+        "facts": {
+          "us-gaap": {
+            "RevenueFromContractWithCustomerExcludingAssessedTax": {
+              "units": {
+                "USD": [
+                  {
+                    "start": "2025-07-01",
+                    "end": "2026-06-30",
+                    "val": 331839000000,
+                    "accn": "0001193125-26-323660",
+                    "fy": 2026,
+                    "fp": "FY",
+                    "form": "10-K",
+                    "filed": "2026-07-29",
+                    "frame": "CY2026"
+                  },
+                  {
+                    "start": "2024-07-01",
+                    "end": "2025-06-30",
+                    "val": 281724000000,
+                    "accn": "0001193125-26-323660",
+                    "fy": 2026,
+                    "fp": "FY",
+                    "form": "10-K",
+                    "filed": "2026-07-29",
+                    "frame": "CY2025"
+                  }
+                ]
+              }
+            },
+            "OperatingIncomeLoss": {
+              "units": {
+                "USD": [
+                  {
+                    "start": "2025-07-01",
+                    "end": "2026-06-30",
+                    "val": 155237000000,
+                    "accn": "0001193125-26-323660",
+                    "fy": 2026,
+                    "fp": "FY",
+                    "form": "10-K",
+                    "filed": "2026-07-29",
+                    "frame": "CY2026"
+                  },
+                  {
+                    "start": "2024-07-01",
+                    "end": "2025-06-30",
+                    "val": 128528000000,
+                    "accn": "0001193125-26-323660",
+                    "fy": 2026,
+                    "fp": "FY",
+                    "form": "10-K",
+                    "filed": "2026-07-29",
+                    "frame": "CY2025"
+                  }
+                ]
+              }
+            },
+            "NetIncomeLoss": {
+              "units": {
+                "USD": [
+                  {
+                    "start": "2025-07-01",
+                    "end": "2026-06-30",
+                    "val": 133749000000,
+                    "accn": "0001193125-26-323660",
+                    "fy": 2026,
+                    "fp": "FY",
+                    "form": "10-K",
+                    "filed": "2026-07-29",
+                    "frame": "CY2026"
+                  },
+                  {
+                    "start": "2024-07-01",
+                    "end": "2025-06-30",
+                    "val": 101832000000,
+                    "accn": "0001193125-26-323660",
+                    "fy": 2026,
+                    "fp": "FY",
+                    "form": "10-K",
+                    "filed": "2026-07-29",
+                    "frame": "CY2025"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "expected_periods": [
+        {
+          "period_start": "2025-07-01",
+          "period_end": "2026-06-30",
+          "values": {
+            "revenue": "331839000000",
+            "operating_income": "155237000000",
+            "net_income": "133749000000"
+          },
+          "operating_margin": "46.78",
+          "net_margin": "40.31"
+        },
+        {
+          "period_start": "2024-07-01",
+          "period_end": "2025-06-30",
+          "values": {
+            "revenue": "281724000000",
+            "operating_income": "128528000000",
+            "net_income": "101832000000"
+          },
+          "operating_margin": "45.62",
+          "net_margin": "36.15"
+        }
+      ],
+      "expected_revenue_yoy": "17.79"
+    }
+  ]
+}

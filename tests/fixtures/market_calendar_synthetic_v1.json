@@ -1,0 +1,11 @@
+{
+  "exchange": "XSIM",
+  "timezone": "America/New_York",
+  "coverage_start": "2024-12-30",
+  "coverage_end": "2025-03-02",
+  "sessions": ["2025-01-02", "2025-01-03", "2025-01-06", "2025-01-07", "2025-02-03", "2025-02-04"],
+  "available_at": "2024-12-29T00:00:00Z",
+  "retrieved_at": "2024-12-29T00:01:00Z",
+  "source": "Synthetic exchange calendar for tests only; NOT a real exchange schedule",
+  "version": "synthetic-calendar-v1"
+}

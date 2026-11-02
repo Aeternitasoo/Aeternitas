@@ -1,0 +1,62 @@
+{
+  "case_version": "m6-case-v1",
+  "id": "H04",
+  "split": "holdout",
+  "company": "AAPL",
+  "description": "Persistent upstream throttling and an immediate legal restriction are both failed inputs, with no model budget spent or report published.",
+  "material": {
+    "mode": "synthetic",
+    "not_live_outage": true,
+    "design": "Failures are observed through the real pipeline, not emulated by a fixture label. Both transient retry exhaustion and permanent refusal must remain distinguishable."
+  },
+  "scenarios": [
+    {
+      "id": "throttle_exhaustion_without_model",
+      "operation": "source_failure",
+      "input": {
+        "status_code": 429,
+        "ticker": "AAPL",
+        "as_of_date": "2025-03-01",
+        "response_body": {
+          "error": "Synthetic holdout upstream throttle"
+        }
+      },
+      "expected": {
+        "outcome": "accepted",
+        "matches": {
+          "/status": "failed",
+          "/step": "financials",
+          "/model_attempts": 0,
+          "/source_requests": 3,
+          "/model_requests": 0,
+          "/report_exists": false,
+          "/published_exists": false
+        }
+      }
+    },
+    {
+      "id": "permanent_restriction_without_retry",
+      "operation": "source_failure",
+      "input": {
+        "status_code": 451,
+        "ticker": "AAPL",
+        "as_of_date": "2025-03-01",
+        "response_body": {
+          "error": "Synthetic holdout upstream restriction"
+        }
+      },
+      "expected": {
+        "outcome": "accepted",
+        "matches": {
+          "/status": "failed",
+          "/step": "financials",
+          "/model_attempts": 0,
+          "/source_requests": 1,
+          "/model_requests": 0,
+          "/report_exists": false,
+          "/published_exists": false
+        }
+      }
+    }
+  ]
+}

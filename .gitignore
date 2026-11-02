@@ -1,0 +1,27 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv*/
+venv/
+.env
+.env.*
+!.env.example
+data/
+.local-container/
+dist/
+build/
+*.egg-info/
+.coverage
+htmlcov/
+.impeccable/review/
+*.log
+*.sqlite*
+*.db
+approval-key
+token*.json
+auth*.json
+# Runtime inputs, model responses and private stores must be outside the repo.
+.local/
+
+# Generated client failure diagnostics are local execution artifacts.
+diagnostics/

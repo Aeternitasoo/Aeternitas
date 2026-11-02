@@ -1,0 +1,362 @@
+{
+  "case_version": "m6-case-v1",
+  "id": "D03",
+  "split": "development",
+  "company": "AAPL",
+  "description": "Research cutoff uses disclosure date, excludes future restatement and rejects another company identity.",
+  "material": {
+    "mode": "synthetic",
+    "notice": "Controlled invented observations; not actual financial data, news or model output."
+  },
+  "scenarios": [
+    {
+      "id": "known-restatement-only",
+      "operation": "financial_summary",
+      "input": {
+        "raw": {
+          "cik": 320193,
+          "entityName": "Synthetic business evaluation (NOT real data)",
+          "facts": {
+            "us-gaap": {
+              "RevenueFromContractWithCustomerExcludingAssessedTax": {
+                "units": {
+                  "USD": [
+                    {
+                      "start": "2023-01-01",
+                      "end": "2023-12-31",
+                      "val": 100,
+                      "accn": "0000320193-25-000001",
+                      "form": "10-K",
+                      "filed": "2025-02-01",
+                      "fy": 2024
+                    },
+                    {
+                      "start": "2024-01-01",
+                      "end": "2024-12-31",
+                      "val": 120,
+                      "accn": "0000320193-25-000001",
+                      "form": "10-K",
+                      "filed": "2025-02-01",
+                      "fy": 2024
+                    },
+                    {
+                      "start": "2024-01-01",
+                      "end": "2024-12-31",
+                      "val": 999,
+                      "accn": "0000320193-25-000001",
+                      "form": "10-K",
+                      "filed": "2025-11-01",
+                      "fy": 2024
+                    },
+                    {
+                      "start": "2024-01-01",
+                      "end": "2024-12-31",
+                      "val": 130,
+                      "accn": "0000320193-25-000001",
+                      "form": "10-K",
+                      "filed": "2025-05-01",
+                      "fy": 2024
+                    }
+                  ]
+                }
+              },
+              "OperatingIncomeLoss": {
+                "units": {
+                  "USD": [
+                    {
+                      "start": "2023-01-01",
+                      "end": "2023-12-31",
+                      "val": 0,
+                      "accn": "0000320193-25-000001",
+                      "form": "10-K",
+                      "filed": "2025-02-01",
+                      "fy": 2024
+                    },
+                    {
+                      "start": "2024-01-01",
+                      "end": "2024-12-31",
+                      "val": 30,
+                      "accn": "0000320193-25-000001",
+                      "form": "10-K",
+                      "filed": "2025-02-01",
+                      "fy": 2024
+                    }
+                  ]
+                }
+              },
+              "NetIncomeLoss": {
+                "units": {
+                  "USD": [
+                    {
+                      "start": "2023-01-01",
+                      "end": "2023-12-31",
+                      "val": 10,
+                      "accn": "0000320193-25-000001",
+                      "form": "10-K",
+                      "filed": "2025-02-01",
+                      "fy": 2024
+                    },
+                    {
+                      "start": "2024-01-01",
+                      "end": "2024-12-31",
+                      "val": -6,
+                      "accn": "0000320193-25-000001",
+                      "form": "10-K",
+                      "filed": "2025-02-01",
+                      "fy": 2024
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "cik": "0000320193",
+        "as_of_date": "2025-10-01",
+        "source": {
+          "sha256": "c1b980448bf775cd22370b48d5e2ee505123e8e2b7349e1fbbe0d094be345ba8",
+          "data_mode": "synthetic"
+        }
+      },
+      "expected": {
+        "outcome": "accepted",
+        "matches": {
+          "/annual_periods/0/facts/revenue/value": "130",
+          "/annual_periods/0/facts/revenue/filed_at": "2025-05-01",
+          "/revenue_yoy/value": "30.00"
+        }
+      }
+    },
+    {
+      "id": "before-latest-known-disclosure",
+      "operation": "financial_summary",
+      "input": {
+        "raw": {
+          "cik": 320193,
+          "entityName": "Synthetic business evaluation (NOT real data)",
+          "facts": {
+            "us-gaap": {
+              "RevenueFromContractWithCustomerExcludingAssessedTax": {
+                "units": {
+                  "USD": [
+                    {
+                      "start": "2023-01-01",
+                      "end": "2023-12-31",
+                      "val": 100,
+                      "accn": "0000320193-25-000001",
+                      "form": "10-K",
+                      "filed": "2025-02-01",
+                      "fy": 2024
+                    },
+                    {
+                      "start": "2024-01-01",
+                      "end": "2024-12-31",
+                      "val": 120,
+                      "accn": "0000320193-25-000001",
+                      "form": "10-K",
+                      "filed": "2025-02-01",
+                      "fy": 2024
+                    },
+                    {
+                      "start": "2024-01-01",
+                      "end": "2024-12-31",
+                      "val": 999,
+                      "accn": "0000320193-25-000001",
+                      "form": "10-K",
+                      "filed": "2025-11-01",
+                      "fy": 2024
+                    },
+                    {
+                      "start": "2024-01-01",
+                      "end": "2024-12-31",
+                      "val": 130,
+                      "accn": "0000320193-25-000001",
+                      "form": "10-K",
+                      "filed": "2025-05-01",
+                      "fy": 2024
+                    }
+                  ]
+                }
+              },
+              "OperatingIncomeLoss": {
+                "units": {
+                  "USD": [
+                    {
+                      "start": "2023-01-01",
+                      "end": "2023-12-31",
+                      "val": 0,
+                      "accn": "0000320193-25-000001",
+                      "form": "10-K",
+                      "filed": "2025-02-01",
+                      "fy": 2024
+                    },
+                    {
+                      "start": "2024-01-01",
+                      "end": "2024-12-31",
+                      "val": 30,
+                      "accn": "0000320193-25-000001",
+                      "form": "10-K",
+                      "filed": "2025-02-01",
+                      "fy": 2024
+                    }
+                  ]
+                }
+              },
+              "NetIncomeLoss": {
+                "units": {
+                  "USD": [
+                    {
+                      "start": "2023-01-01",
+                      "end": "2023-12-31",
+                      "val": 10,
+                      "accn": "0000320193-25-000001",
+                      "form": "10-K",
+                      "filed": "2025-02-01",
+                      "fy": 2024
+                    },
+                    {
+                      "start": "2024-01-01",
+                      "end": "2024-12-31",
+                      "val": -6,
+                      "accn": "0000320193-25-000001",
+                      "form": "10-K",
+                      "filed": "2025-02-01",
+                      "fy": 2024
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "cik": "0000320193",
+        "as_of_date": "2025-04-30",
+        "source": {
+          "sha256": "c1b980448bf775cd22370b48d5e2ee505123e8e2b7349e1fbbe0d094be345ba8",
+          "data_mode": "synthetic"
+        }
+      },
+      "expected": {
+        "outcome": "accepted",
+        "matches": {
+          "/annual_periods/0/facts/revenue/value": "120",
+          "/annual_periods/0/facts/revenue/filed_at": "2025-02-01"
+        }
+      }
+    },
+    {
+      "id": "wrong-company-rejected",
+      "operation": "financial_summary",
+      "input": {
+        "raw": {
+          "cik": 320193,
+          "entityName": "Synthetic business evaluation (NOT real data)",
+          "facts": {
+            "us-gaap": {
+              "RevenueFromContractWithCustomerExcludingAssessedTax": {
+                "units": {
+                  "USD": [
+                    {
+                      "start": "2023-01-01",
+                      "end": "2023-12-31",
+                      "val": 100,
+                      "accn": "0000320193-25-000001",
+                      "form": "10-K",
+                      "filed": "2025-02-01",
+                      "fy": 2024
+                    },
+                    {
+                      "start": "2024-01-01",
+                      "end": "2024-12-31",
+                      "val": 120,
+                      "accn": "0000320193-25-000001",
+                      "form": "10-K",
+                      "filed": "2025-02-01",
+                      "fy": 2024
+                    },
+                    {
+                      "start": "2024-01-01",
+                      "end": "2024-12-31",
+                      "val": 999,
+                      "accn": "0000320193-25-000001",
+                      "form": "10-K",
+                      "filed": "2025-11-01",
+                      "fy": 2024
+                    },
+                    {
+                      "start": "2024-01-01",
+                      "end": "2024-12-31",
+                      "val": 130,
+                      "accn": "0000320193-25-000001",
+                      "form": "10-K",
+                      "filed": "2025-05-01",
+                      "fy": 2024
+                    }
+                  ]
+                }
+              },
+              "OperatingIncomeLoss": {
+                "units": {
+                  "USD": [
+                    {
+                      "start": "2023-01-01",
+                      "end": "2023-12-31",
+                      "val": 0,
+                      "accn": "0000320193-25-000001",
+                      "form": "10-K",
+                      "filed": "2025-02-01",
+                      "fy": 2024
+                    },
+                    {
+                      "start": "2024-01-01",
+                      "end": "2024-12-31",
+                      "val": 30,
+                      "accn": "0000320193-25-000001",
+                      "form": "10-K",
+                      "filed": "2025-02-01",
+                      "fy": 2024
+                    }
+                  ]
+                }
+              },
+              "NetIncomeLoss": {
+                "units": {
+                  "USD": [
+                    {
+                      "start": "2023-01-01",
+                      "end": "2023-12-31",
+                      "val": 10,
+                      "accn": "0000320193-25-000001",
+                      "form": "10-K",
+                      "filed": "2025-02-01",
+                      "fy": 2024
+                    },
+                    {
+                      "start": "2024-01-01",
+                      "end": "2024-12-31",
+                      "val": -6,
+                      "accn": "0000320193-25-000001",
+                      "form": "10-K",
+                      "filed": "2025-02-01",
+                      "fy": 2024
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "cik": "0000789019",
+        "as_of_date": "2025-10-01",
+        "source": {
+          "sha256": "c1b980448bf775cd22370b48d5e2ee505123e8e2b7349e1fbbe0d094be345ba8",
+          "data_mode": "synthetic"
+        }
+      },
+      "expected": {
+        "outcome": "rejected",
+        "error_contains": "Company identity mismatch"
+      }
+    }
+  ]
+}

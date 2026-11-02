@@ -1,0 +1,169 @@
+{
+  "case_version": "m6-case-v1",
+  "id": "D01",
+  "split": "development",
+  "company": "AAPL",
+  "description": "Frozen SEC observations reproduce two annual revenue periods, margins and growth with company identity.",
+  "material": {
+    "mode": "derived_public_snapshot",
+    "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
+    "original_snapshot_sha256": "73a86c6aedc31f77cac2ea4df5f80f0b3bd7e6eb58bb4e01444fbedf3afb9c43",
+    "original_snapshot_path": "snapshots/companyfacts/0000320193/73a86c6aedc31f77cac2ea4df5f80f0b3bd7e6eb58bb4e01444fbedf3afb9c43.json",
+    "origin_run_id": "8315b720b3714d12926a513ce9dfd96d",
+    "derivative_scope": "Only the six exact annual observations used by the verified report; this is not a fresh live request or full SEC snapshot.",
+    "observation_mapping": [
+      {
+        "original_json_pointer": "/facts/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax/units/USD/100",
+        "derivative_json_pointer": "/facts/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax/units/USD/0",
+        "observation_sha256": "d0e7812bd896073ea7a92758eded7729fbb88fa58d827705db8a4b8690a7dc6e"
+      },
+      {
+        "original_json_pointer": "/facts/us-gaap/OperatingIncomeLoss/units/USD/217",
+        "derivative_json_pointer": "/facts/us-gaap/OperatingIncomeLoss/units/USD/0",
+        "observation_sha256": "d13be97d4eb15e9dee19ac6001e8743f84ce9c55b5123622811c54bcdf0a4790"
+      },
+      {
+        "original_json_pointer": "/facts/us-gaap/NetIncomeLoss/units/USD/321",
+        "derivative_json_pointer": "/facts/us-gaap/NetIncomeLoss/units/USD/0",
+        "observation_sha256": "ec102ad0fc7289ddb25ccc5c9c62db63ef4fd215aeaa570e8a48c9690e024075"
+      },
+      {
+        "original_json_pointer": "/facts/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax/units/USD/111",
+        "derivative_json_pointer": "/facts/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax/units/USD/1",
+        "observation_sha256": "7ff5eb05b579cad4416589e7e07d8a2ff8923118150b75969a4d260f506fdc28"
+      },
+      {
+        "original_json_pointer": "/facts/us-gaap/OperatingIncomeLoss/units/USD/228",
+        "derivative_json_pointer": "/facts/us-gaap/OperatingIncomeLoss/units/USD/1",
+        "observation_sha256": "3f0a984c4fa3d1c2aee4c6ae93348c76550d3bf8a8d48b3d0527a6de0008fb62"
+      },
+      {
+        "original_json_pointer": "/facts/us-gaap/NetIncomeLoss/units/USD/332",
+        "derivative_json_pointer": "/facts/us-gaap/NetIncomeLoss/units/USD/1",
+        "observation_sha256": "98124467559ee29aef2b94b0fd9b4fd2ed3508d665cd1221e00544130929558f"
+      }
+    ],
+    "original_bytes_checked_during_freeze": true
+  },
+  "scenarios": [
+    {
+      "id": "annual-values-and-calculations",
+      "operation": "financial_summary",
+      "input": {
+        "raw": {
+          "cik": 320193,
+          "entityName": "Apple Inc.",
+          "facts": {
+            "us-gaap": {
+              "RevenueFromContractWithCustomerExcludingAssessedTax": {
+                "units": {
+                  "USD": [
+                    {
+                      "start": "2023-10-01",
+                      "end": "2024-09-28",
+                      "val": 391035000000,
+                      "accn": "0000320193-25-000079",
+                      "fy": 2025,
+                      "fp": "FY",
+                      "form": "10-K",
+                      "filed": "2025-10-31",
+                      "frame": "CY2024"
+                    },
+                    {
+                      "start": "2024-09-29",
+                      "end": "2025-09-27",
+                      "val": 416161000000,
+                      "accn": "0000320193-25-000079",
+                      "fy": 2025,
+                      "fp": "FY",
+                      "form": "10-K",
+                      "filed": "2025-10-31",
+                      "frame": "CY2025"
+                    }
+                  ]
+                }
+              },
+              "OperatingIncomeLoss": {
+                "units": {
+                  "USD": [
+                    {
+                      "start": "2023-10-01",
+                      "end": "2024-09-28",
+                      "val": 123216000000,
+                      "accn": "0000320193-25-000079",
+                      "fy": 2025,
+                      "fp": "FY",
+                      "form": "10-K",
+                      "filed": "2025-10-31",
+                      "frame": "CY2024"
+                    },
+                    {
+                      "start": "2024-09-29",
+                      "end": "2025-09-27",
+                      "val": 133050000000,
+                      "accn": "0000320193-25-000079",
+                      "fy": 2025,
+                      "fp": "FY",
+                      "form": "10-K",
+                      "filed": "2025-10-31",
+                      "frame": "CY2025"
+                    }
+                  ]
+                }
+              },
+              "NetIncomeLoss": {
+                "units": {
+                  "USD": [
+                    {
+                      "start": "2023-10-01",
+                      "end": "2024-09-28",
+                      "val": 93736000000,
+                      "accn": "0000320193-25-000079",
+                      "fy": 2025,
+                      "fp": "FY",
+                      "form": "10-K",
+                      "filed": "2025-10-31",
+                      "frame": "CY2024"
+                    },
+                    {
+                      "start": "2024-09-29",
+                      "end": "2025-09-27",
+                      "val": 112010000000,
+                      "accn": "0000320193-25-000079",
+                      "fy": 2025,
+                      "fp": "FY",
+                      "form": "10-K",
+                      "filed": "2025-10-31",
+                      "frame": "CY2025"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "cik": "0000320193",
+        "as_of_date": "2026-10-22",
+        "source": {
+          "sha256": "936553cda41f996dac21a66b4b528587923362d5061d32049b3494c5e98de543",
+          "data_mode": "frozen_public_derivative",
+          "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
+          "original_sha256": "73a86c6aedc31f77cac2ea4df5f80f0b3bd7e6eb58bb4e01444fbedf3afb9c43"
+        }
+      },
+      "expected": {
+        "outcome": "accepted",
+        "matches": {
+          "/cik": "0000320193",
+          "/as_of_date": "2026-10-22",
+          "/annual_periods/0/facts/revenue/value": "416161000000",
+          "/annual_periods/1/facts/revenue/value": "391035000000",
+          "/annual_periods/0/operating_margin/value": "31.97",
+          "/annual_periods/0/net_margin/value": "26.92",
+          "/revenue_yoy/value": "6.43",
+          "/source/data_mode": "frozen_public_derivative"
+        }
+      }
+    }
+  ]
+}

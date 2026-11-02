@@ -1,0 +1,222 @@
+{
+  "case_version": "m6-case-v1",
+  "id": "H03",
+  "split": "holdout",
+  "company": "MSFT",
+  "description": "An exact, valid filing quotation is attached to an unsupported certainty claim. Hard integrity and semantic support must remain separately recorded.",
+  "material": {
+    "mode": "synthetic",
+    "not_real_filing": true,
+    "design": "The claim is intentionally unsupported despite valid quotation membership, company and cutoff metadata; an explicit reviewer judgment is required."
+  },
+  "scenarios": [
+    {
+      "id": "legitimate_source_selection",
+      "operation": "select_evidence",
+      "input": {
+        "role": "synthesis",
+        "ticker": "MSFT",
+        "cik": "0000789019",
+        "as_of_date": "2024-09-01",
+        "question": "这些申报材料能否证明经营风险已消除？",
+        "evidence": [
+          {
+            "id": "F-holdout-demand",
+            "kind": "filing",
+            "company_cik": "0000789019",
+            "title": "Synthetic annual management discussion",
+            "text": "Management continues to review demand conditions and cannot assure forecasted orders. These statements describe uncertainties, not a guarantee that operating risks have disappeared.",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000078901924000022/holdout.htm",
+            "published_at": "2024-08-12",
+            "time_precision": "date",
+            "source": {
+              "retrieval_id": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+              "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000078901924000022/holdout.htm",
+              "sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+              "size_bytes": 2048,
+              "cik": "0000789019",
+              "fetched_at": "2025-01-12T10:00:00+00:00",
+              "snapshot_path": "snapshots/filings/synthetic-holdout.html",
+              "data_mode": "controlled_test"
+            },
+            "locator": {
+              "accession": "0000789019-24-000022",
+              "document": "holdout.htm",
+              "filed_at": "2024-08-12",
+              "section": "management_discussion",
+              "normalized_start": 0,
+              "normalized_end": 181,
+              "parser_version": "filing-sections-m1-v1"
+            }
+          }
+        ]
+      },
+      "expected": {
+        "outcome": "accepted",
+        "matches": {
+          "/selected/0/id": "F-holdout-demand",
+          "/manifest/policy/ranking_is_support_validation": false
+        }
+      }
+    },
+    {
+      "id": "unsupported_certainty_with_valid_quote",
+      "operation": "analysis_checks",
+      "input": {
+        "analyses": {
+          "fundamentals": {
+            "claims": [],
+            "gaps": [
+              "本角色收到的材料不足以形成额外判断"
+            ]
+          },
+          "events": {
+            "claims": [],
+            "gaps": [
+              "本角色收到的材料不足以形成额外判断"
+            ]
+          },
+          "risk": {
+            "claims": [],
+            "gaps": [
+              "本角色收到的材料不足以形成额外判断"
+            ]
+          },
+          "synthesis": {
+            "claims": [
+              {
+                "text": "这些材料足以确认公司的整体经营风险已经消除",
+                "stance": "support",
+                "citations": [
+                  {
+                    "evidence_id": "F-holdout-demand",
+                    "quote": "Management continues to review demand conditions and cannot assure forecasted orders."
+                  }
+                ]
+              }
+            ],
+            "gaps": []
+          }
+        },
+        "chosen": {
+          "fundamentals": [
+            {
+              "id": "F-holdout-demand",
+              "kind": "filing",
+              "company_cik": "0000789019",
+              "title": "Synthetic annual management discussion",
+              "text": "Management continues to review demand conditions and cannot assure forecasted orders. These statements describe uncertainties, not a guarantee that operating risks have disappeared.",
+              "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000078901924000022/holdout.htm",
+              "published_at": "2024-08-12",
+              "time_precision": "date",
+              "source": {
+                "retrieval_id": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+                "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000078901924000022/holdout.htm",
+                "sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+                "size_bytes": 2048,
+                "cik": "0000789019",
+                "fetched_at": "2025-01-12T10:00:00+00:00",
+                "snapshot_path": "snapshots/filings/synthetic-holdout.html",
+                "data_mode": "controlled_test"
+              },
+              "locator": {
+                "accession": "0000789019-24-000022",
+                "document": "holdout.htm",
+                "filed_at": "2024-08-12",
+                "section": "management_discussion",
+                "normalized_start": 0,
+                "normalized_end": 181,
+                "parser_version": "filing-sections-m1-v1"
+              }
+            }
+          ],
+          "events": [],
+          "risk": [
+            {
+              "id": "F-holdout-demand",
+              "kind": "filing",
+              "company_cik": "0000789019",
+              "title": "Synthetic annual management discussion",
+              "text": "Management continues to review demand conditions and cannot assure forecasted orders. These statements describe uncertainties, not a guarantee that operating risks have disappeared.",
+              "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000078901924000022/holdout.htm",
+              "published_at": "2024-08-12",
+              "time_precision": "date",
+              "source": {
+                "retrieval_id": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+                "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000078901924000022/holdout.htm",
+                "sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+                "size_bytes": 2048,
+                "cik": "0000789019",
+                "fetched_at": "2025-01-12T10:00:00+00:00",
+                "snapshot_path": "snapshots/filings/synthetic-holdout.html",
+                "data_mode": "controlled_test"
+              },
+              "locator": {
+                "accession": "0000789019-24-000022",
+                "document": "holdout.htm",
+                "filed_at": "2024-08-12",
+                "section": "management_discussion",
+                "normalized_start": 0,
+                "normalized_end": 181,
+                "parser_version": "filing-sections-m1-v1"
+              }
+            }
+          ],
+          "synthesis": [
+            {
+              "id": "F-holdout-demand",
+              "kind": "filing",
+              "company_cik": "0000789019",
+              "title": "Synthetic annual management discussion",
+              "text": "Management continues to review demand conditions and cannot assure forecasted orders. These statements describe uncertainties, not a guarantee that operating risks have disappeared.",
+              "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000078901924000022/holdout.htm",
+              "published_at": "2024-08-12",
+              "time_precision": "date",
+              "source": {
+                "retrieval_id": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+                "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000078901924000022/holdout.htm",
+                "sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+                "size_bytes": 2048,
+                "cik": "0000789019",
+                "fetched_at": "2025-01-12T10:00:00+00:00",
+                "snapshot_path": "snapshots/filings/synthetic-holdout.html",
+                "data_mode": "controlled_test"
+              },
+              "locator": {
+                "accession": "0000789019-24-000022",
+                "document": "holdout.htm",
+                "filed_at": "2024-08-12",
+                "section": "management_discussion",
+                "normalized_start": 0,
+                "normalized_end": 181,
+                "parser_version": "filing-sections-m1-v1"
+              }
+            }
+          ]
+        }
+      },
+      "expected": {
+        "outcome": "accepted",
+        "matches": {
+          "/semantic_support": "human_review_required",
+          "/research_quality": "not_automatically_certified",
+          "/roles/synthesis/claim_count": 1,
+          "/roles/synthesis/claim_traces/0/semantic_support": "human_review_required"
+        }
+      },
+      "manual_review": {
+        "reviewer": "assistant_engineering_review",
+        "scope": "controlled_synthetic",
+        "verdict": "unsupported",
+        "rationale": "The quoted source explicitly preserves demand uncertainty and disclaims assurance of forecast orders. It supplies no basis for the claim that all operating risks have disappeared. An exact quote and a permitted citation ID establish traceability only.",
+        "source_locations": [
+          {
+            "evidence_id": "F-holdout-demand",
+            "quote": "Management continues to review demand conditions and cannot assure forecasted orders."
+          }
+        ],
+        "conclusion_boundary": "Do not score a hard-check pass as semantic correctness. A production model returning this certainty claim would require correction or a clearly exposed review failure; this frozen input intentionally tests that distinction."
+      }
+    }
+  ]
+}

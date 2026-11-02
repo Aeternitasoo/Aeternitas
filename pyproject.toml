@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aeternitas-core"
+version = "2.0.0"
+description = "Controlled, evidence-based AI investment research"
+requires-python = ">=3.13,<3.14"
+dependencies = ["httpx==0.28.1", "PyJWT[crypto]==2.15.1", "psycopg[binary]==3.3.3"]
+
+[project.optional-dependencies]
+observability = ["langfuse==5.0.4"]
+server = ["fastapi==0.157.0", "uvicorn==0.54.0", "pydantic==2.14.1", "starlette==1.9.0"]
+test = ["pytest==9.1.1"]
+
+[project.scripts]
+aeternitas-core = "core_cli:main"
+
+[tool.setuptools]
+py-modules = ["aeternitas", "agent_harness", "agent_skills", "agent_tools", "analysis_contracts", "analysis_workflow", "api_client", "candidate_registry", "chatgpt_auth", "chatgpt_stream", "company_identity", "core_cli", "evaluation_cases", "evidence_repository", "evidence_selection", "fetch_financials", "filing_fact_audit", "filing_source", "financial_facts", "harness_contracts", "infrastructure_rsi", "lab_evaluation", "lab_evaluation_demo", "langfuse_adapter", "local_api", "m7_maintenance", "market_data", "models", "news_source", "point_in_time", "recoverable_pipeline", "research_analysis", "research_contract_profile", "research_inputs", "research_intelligence", "research_memory", "research_observability", "research_pipeline", "research_quality", "research_report", "research_rsi", "research_runtime", "research_service", "research_test_support", "research_validation", "research_worker", "research_workflow", "run_repository", "time_machine", "yahoo_csv"]
+packages = ["sources"]

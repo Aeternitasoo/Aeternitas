@@ -1,0 +1,73 @@
+{
+  "schema_version": "m6-evaluation-protocol-v1",
+  "frozen_at": "2026-10-23",
+  "scope": "Aeternitas local research project, two companies and bounded annual financial / summary evidence",
+  "development": {
+    "case_count": 8,
+    "manifest": "evals/m6/development/manifest.json",
+    "manifest_sha256": "b8f5a1262a65bdd3acdc507932db9e72f48058996d161e82a1fa63b4d1221930",
+    "execution": "Development only until implementation and review records are frozen"
+  },
+  "holdout": {
+    "case_count": 4,
+    "manifest": "evals/m6/holdout/manifest.json",
+    "manifest_sha256": "e20d4b23a056ef0a37b88653294eb39317b7763802c77e9d05d26fea1e863bcb",
+    "execution": "A separate agent creates and freezes variants without sharing input or expected answers with the development implementer; root explicitly starts the first execution after development freeze",
+    "failed_first_execution": "Retain the original result and hashes, fix the real defect, record case revision only if the case itself is wrong, then rerun affected cases; never rewrite first-run evidence"
+  },
+  "automatic_acceptance": {
+    "all_declared_hard_rules_pass": true,
+    "rule_types": [
+      "Company identity and original-source derivative provenance",
+      "Disclosure dates and Shanghai news-cutoff time",
+      "Exact financial values and deterministic Decimal calculations",
+      "Missing / zero / negative input distinctions",
+      "Conflicts and unsupported duration / currency rejection",
+      "Citation set membership and exact quotation",
+      "No unverified numeric model prose",
+      "Role-specific evidence selection and explicit prior-role scope metadata",
+      "Bounded upstream failure status, attempt count and absence of a published report"
+    ],
+    "semantic_entailment_automatically_certified": false,
+    "all_automatic_cases_use_live_credentials": false,
+    "model_requests": 0,
+    "live_source_requests": 0,
+    "source_failure_transport": "httpx.MockTransport exercising actual orchestration and source client"
+  },
+  "human_review": {
+    "minimum_companies": 2,
+    "minimum_important_claims_per_company": 3,
+    "review_source": "Original saved public source bytes and deterministic financial source locations",
+    "review_record_fields": [
+      "company", "run_id", "role", "claim_index", "claim_text", "evidence_id",
+      "original_source_location", "source_quote", "verdict", "rationale", "severity", "known_limitations"
+    ],
+    "acceptance": "No unmarked severe source or numeric error in sampled important claims; scope limitations and unresolved gaps are visible",
+    "reviewer_identity": "Assistant engineering review is recorded separately from independent user review",
+    "no_llm_judge_self_certification": true
+  },
+  "design_comparison": {
+    "strategies": ["direct_synthesis", "four_roles"],
+    "same_evidence_bundle": true,
+    "same_company_date_question": true,
+    "same_model_and_subscription_billing": true,
+    "maximum_total_attempts_each": 8,
+    "maximum_elapsed_seconds_each": 1800,
+    "direct_synthesis_shape": "One synthesis task with at most one validation repair; unused budget is not deliberately consumed",
+    "record": ["evidence_sha256", "prompt_versions", "model", "billing_mode", "call_limit", "deadline_seconds", "actual_calls", "elapsed_seconds", "usage", "cost_or_unknown", "supported_and_unsupported_claims", "visible_gaps", "review_rationale"],
+    "predeclared_conclusion": "Neither strategy is assumed superior; a small sample cannot establish general accuracy or causal performance gains"
+  },
+  "evidence_separation": [
+    "Frozen offline case execution",
+    "Original live source API and PostgreSQL smoke",
+    "Real subscription LLM smoke and report verification",
+    "Controlled crash / failure recovery evidence",
+    "Two startup sessions with a restart and saved-history lookup"
+  ],
+  "limitations": [
+    "Twelve project-specific cases cannot estimate correctness across all securities or accounting policies.",
+    "Passing schema, quote and source membership rules does not establish that prose follows from evidence.",
+    "Replaying a frozen public-source derivative is offline verification, not a new live API result.",
+    "Invented failure inputs and model text are always labeled synthetic."
+  ]
+}

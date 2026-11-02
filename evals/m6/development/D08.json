@@ -1,0 +1,60 @@
+{
+  "case_version": "m6-case-v1",
+  "id": "D08",
+  "split": "development",
+  "company": [
+    "AAPL",
+    "MSFT"
+  ],
+  "description": "Permanent and transient upstream failures persist failed runs, bounded attempts and no model call or report publication.",
+  "material": {
+    "mode": "synthetic",
+    "notice": "Controlled invented observations; not actual financial data, news or model output."
+  },
+  "scenarios": [
+    {
+      "id": "permanent-source-denial",
+      "operation": "source_failure",
+      "input": {
+        "status_code": 403,
+        "ticker": "AAPL",
+        "as_of_date": "2025-10-01"
+      },
+      "expected": {
+        "outcome": "accepted",
+        "matches": {
+          "/status": "failed",
+          "/step": "financials",
+          "/model_attempts": 0,
+          "/source_requests": 1,
+          "/model_requests": 0,
+          "/report_exists": false,
+          "/published_exists": false,
+          "/live_requests": 0
+        }
+      }
+    },
+    {
+      "id": "bounded-transient-source-retries",
+      "operation": "source_failure",
+      "input": {
+        "status_code": 503,
+        "ticker": "MSFT",
+        "as_of_date": "2025-10-01"
+      },
+      "expected": {
+        "outcome": "accepted",
+        "matches": {
+          "/status": "failed",
+          "/step": "financials",
+          "/model_attempts": 0,
+          "/source_requests": 3,
+          "/model_requests": 0,
+          "/report_exists": false,
+          "/published_exists": false,
+          "/live_requests": 0
+        }
+      }
+    }
+  ]
+}

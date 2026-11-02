@@ -1,0 +1,244 @@
+{
+  "case_version": "m6-case-v1",
+  "id": "H01",
+  "split": "holdout",
+  "company": "AAPL",
+  "description": "A paired date boundary over unequal annual durations and a partial amended filing; retained source versions must not silently mix.",
+  "material": {
+    "mode": "synthetic",
+    "not_real_financial_data": true,
+    "design": "Paired earlier/later observations of one immutable companyfacts payload; fiscal calendar and incomplete revision interact."
+  },
+  "scenarios": [
+    {
+      "id": "before_partial_amendment",
+      "operation": "financial_summary",
+      "input": {
+        "raw": {
+          "cik": 320193,
+          "entityName": "Synthetic AAPL holdout fiscal-calendar example",
+          "facts": {
+            "us-gaap": {
+              "RevenueFromContractWithCustomerExcludingAssessedTax": {
+                "units": {
+                  "USD": [
+                    {
+                      "start": "2022-09-25",
+                      "end": "2023-09-30",
+                      "filed": "2023-11-03",
+                      "accn": "0000320193-23-000019",
+                      "val": 360,
+                      "form": "10-K"
+                    },
+                    {
+                      "start": "2023-10-01",
+                      "end": "2024-09-28",
+                      "filed": "2024-11-01",
+                      "accn": "0000320193-24-000011",
+                      "val": 390,
+                      "form": "10-K"
+                    },
+                    {
+                      "start": "2023-10-01",
+                      "end": "2024-09-28",
+                      "filed": "2025-02-20",
+                      "accn": "0000320193-25-000007",
+                      "val": 360,
+                      "form": "10-K/A"
+                    }
+                  ]
+                }
+              },
+              "OperatingIncomeLoss": {
+                "units": {
+                  "USD": [
+                    {
+                      "start": "2022-09-25",
+                      "end": "2023-09-30",
+                      "filed": "2023-11-03",
+                      "accn": "0000320193-23-000019",
+                      "val": 54,
+                      "form": "10-K"
+                    },
+                    {
+                      "start": "2023-10-01",
+                      "end": "2024-09-28",
+                      "filed": "2024-11-01",
+                      "accn": "0000320193-24-000011",
+                      "val": 60,
+                      "form": "10-K"
+                    },
+                    {
+                      "start": "2023-10-01",
+                      "end": "2024-09-28",
+                      "filed": "2025-02-20",
+                      "accn": "0000320193-25-000007",
+                      "val": 50,
+                      "form": "10-K/A"
+                    }
+                  ]
+                }
+              },
+              "NetIncomeLoss": {
+                "units": {
+                  "USD": [
+                    {
+                      "start": "2022-09-25",
+                      "end": "2023-09-30",
+                      "filed": "2023-11-03",
+                      "accn": "0000320193-23-000019",
+                      "val": 40,
+                      "form": "10-K"
+                    },
+                    {
+                      "start": "2023-10-01",
+                      "end": "2024-09-28",
+                      "filed": "2024-11-01",
+                      "accn": "0000320193-24-000011",
+                      "val": 45,
+                      "form": "10-K"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "cik": "0000320193",
+        "as_of_date": "2025-01-20",
+        "source": {
+          "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        }
+      },
+      "expected": {
+        "outcome": "accepted",
+        "matches": {
+          "/annual_periods/0/facts/revenue/value": "390",
+          "/annual_periods/0/facts/revenue/filed_at": "2024-11-01",
+          "/annual_periods/0/facts/revenue/duration_days": 364,
+          "/annual_periods/1/facts/revenue/duration_days": 371,
+          "/annual_periods/0/operating_margin/value": "15.38",
+          "/annual_periods/0/net_margin/value": "11.54",
+          "/revenue_yoy/value": "8.33",
+          "/revenue_yoy/unavailable_reason": null,
+          "/status": "financial_data_with_gaps",
+          "/warnings/0": "Annual durations differ; review 52/53-week and accounting comparability"
+        }
+      }
+    },
+    {
+      "id": "after_partial_amendment",
+      "operation": "financial_summary",
+      "input": {
+        "raw": {
+          "cik": 320193,
+          "entityName": "Synthetic AAPL holdout fiscal-calendar example",
+          "facts": {
+            "us-gaap": {
+              "RevenueFromContractWithCustomerExcludingAssessedTax": {
+                "units": {
+                  "USD": [
+                    {
+                      "start": "2022-09-25",
+                      "end": "2023-09-30",
+                      "filed": "2023-11-03",
+                      "accn": "0000320193-23-000019",
+                      "val": 360,
+                      "form": "10-K"
+                    },
+                    {
+                      "start": "2023-10-01",
+                      "end": "2024-09-28",
+                      "filed": "2024-11-01",
+                      "accn": "0000320193-24-000011",
+                      "val": 390,
+                      "form": "10-K"
+                    },
+                    {
+                      "start": "2023-10-01",
+                      "end": "2024-09-28",
+                      "filed": "2025-02-20",
+                      "accn": "0000320193-25-000007",
+                      "val": 360,
+                      "form": "10-K/A"
+                    }
+                  ]
+                }
+              },
+              "OperatingIncomeLoss": {
+                "units": {
+                  "USD": [
+                    {
+                      "start": "2022-09-25",
+                      "end": "2023-09-30",
+                      "filed": "2023-11-03",
+                      "accn": "0000320193-23-000019",
+                      "val": 54,
+                      "form": "10-K"
+                    },
+                    {
+                      "start": "2023-10-01",
+                      "end": "2024-09-28",
+                      "filed": "2024-11-01",
+                      "accn": "0000320193-24-000011",
+                      "val": 60,
+                      "form": "10-K"
+                    },
+                    {
+                      "start": "2023-10-01",
+                      "end": "2024-09-28",
+                      "filed": "2025-02-20",
+                      "accn": "0000320193-25-000007",
+                      "val": 50,
+                      "form": "10-K/A"
+                    }
+                  ]
+                }
+              },
+              "NetIncomeLoss": {
+                "units": {
+                  "USD": [
+                    {
+                      "start": "2022-09-25",
+                      "end": "2023-09-30",
+                      "filed": "2023-11-03",
+                      "accn": "0000320193-23-000019",
+                      "val": 40,
+                      "form": "10-K"
+                    },
+                    {
+                      "start": "2023-10-01",
+                      "end": "2024-09-28",
+                      "filed": "2024-11-01",
+                      "accn": "0000320193-24-000011",
+                      "val": 45,
+                      "form": "10-K"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "cik": "0000320193",
+        "as_of_date": "2025-03-01",
+        "source": {
+          "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        }
+      },
+      "expected": {
+        "outcome": "accepted",
+        "matches": {
+          "/annual_periods/0/facts/revenue/value": "360",
+          "/annual_periods/0/facts/revenue/form": "10-K/A",
+          "/annual_periods/0/facts/net_income/accession": "0000320193-24-000011",
+          "/annual_periods/0/operating_margin/value": "13.89",
+          "/annual_periods/0/net_margin/value": null,
+          "/annual_periods/0/net_margin/unavailable_reason": "mixed_filing_versions_require_review",
+          "/revenue_yoy/value": "0.00",
+          "/status": "financial_data_with_gaps"
+        }
+      }
+    }
+  ]
+}

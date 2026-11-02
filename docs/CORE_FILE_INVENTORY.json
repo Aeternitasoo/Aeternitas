@@ -1,0 +1,3209 @@
+[
+  {
+    "path": ".dockerignore",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "6d2a5c4cdf743b4efc84fe70b9995876992054a846d555738681abac7a9460f3"
+  },
+  {
+    "path": ".env.example",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "3dd13aa1bfba83a062ee10c5e3301d981d5d1a2cc4dae61c9757134ef6795ba0"
+  },
+  {
+    "path": ".github/workflows/offline.yml",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "84523567d95c6c8a4b1be0c9c37aad3ef5a437797511a32c74279788093e096a"
+  },
+  {
+    "path": ".impeccable/design.json",
+    "category": "D",
+    "action": "remove_from_current_tree",
+    "reason": "Generated example/UI review or already-applied debug patch; not runtime input.",
+    "imported_by": [],
+    "sha256": "79052d86283c4d2656f1a28a6fec0117caddfe7b5dc7240288c159efedea7137"
+  },
+  {
+    "path": ".impeccable/review/desktop-default.png",
+    "category": "D",
+    "action": "remove_from_current_tree",
+    "reason": "Generated example/UI review or already-applied debug patch; not runtime input.",
+    "imported_by": [],
+    "sha256": "373b5b09d724a361a93d33b5ff7338efb271c4d8ae651415a1da4e809efcedc7"
+  },
+  {
+    "path": ".impeccable/review/grove-finish-review.md",
+    "category": "D",
+    "action": "remove_from_current_tree",
+    "reason": "Generated example/UI review or already-applied debug patch; not runtime input.",
+    "imported_by": [],
+    "sha256": "c78c500508f491c5a0ec4f7911f750fb99bfe0f62a2216de4aa4611be8516d6c"
+  },
+  {
+    "path": ".impeccable/surfaces/report-frontend-renderer-py.md",
+    "category": "D",
+    "action": "remove_from_current_tree",
+    "reason": "Generated example/UI review or already-applied debug patch; not runtime input.",
+    "imported_by": [],
+    "sha256": "4b319afb79f4b98f3bf0ae3ac498502e22c074ae8cf4f0bf22f7f30a1610bc2c"
+  },
+  {
+    "path": "AGENTS.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "c2ab4e05c9b481ecd67ed2a83965792a940dece0517e743581236d63f4428334"
+  },
+  {
+    "path": "AI_Research_System_Maturity_Checklist.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "c365bdf2c4116d02de35cf3f05f94045d9078d9d285275ca21b5eebe494c42c9"
+  },
+  {
+    "path": "AI_Research_System_Progress.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "9b08c600e942c390d182c858c80c952267f6c39d954d61d33ad39ccfd0d4f7ae"
+  },
+  {
+    "path": "AI_Research_System_v1_Module_Plan.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "5d00f9bcaa3d738d684b92e003b22a010bacdff55a6f4d239a6586ff9014e613"
+  },
+  {
+    "path": "DESIGN.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "2836223dbb054d7103086f62c98f627c423ec1de5a03b94c60da27d4edcbe91a"
+  },
+  {
+    "path": "Dockerfile",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "e3a5954c33ebec3a2591658ae98e350056d9cf26f52557a91b356ee6293473f7"
+  },
+  {
+    "path": "NOTICE.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "a1f6cff3086979cdad4095f96a04b615b323d9a5680884c93042382b9bcac60c"
+  },
+  {
+    "path": "PRODUCT.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "0fc450d7f4b6fb58fb617957ad29e059151f5d03c64b222c9044316d7fbe3fa5"
+  },
+  {
+    "path": "RELEASE_CHECKLIST.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "48d9901969fb92de54729b4260ba50debba6cc78e28848ad3e37c8947602e6ac"
+  },
+  {
+    "path": "RELEASE_NOTES.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "50ea25340869fe91ae4d81905eb499a321f55799aabc8fe43401dda93444e40c"
+  },
+  {
+    "path": "aeternitas.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [
+      "research_rsi.py",
+      "research_validation.py",
+      "scripts/accept_m5_live.py",
+      "scripts/audit_m2.py",
+      "scripts/audit_m3.py",
+      "scripts/audit_m4.py",
+      "scripts/audit_m5.py",
+      "scripts/audit_m6.py",
+      "scripts/audit_m7.py",
+      "scripts/backup_m7.py",
+      "scripts/check_agent_infrastructure.py",
+      "scripts/compare_m6.py",
+      "scripts/container_app.py",
+      "scripts/maintain_m7.py",
+      "scripts/replicate_m6.py",
+      "scripts/run_quality_validation.py",
+      "test_chatgpt_auth.py",
+      "test_m3_application.py",
+      "test_m5_api.py",
+      "test_market_data.py",
+      "test_point_in_time.py",
+      "test_research_pipeline.py",
+      "test_time_machine.py",
+      "test_yahoo_csv.py"
+    ],
+    "sha256": "6ba3c2b6b4de1030f95760f305bebe4d7a6390c5339215f46f86b782bdcf997c"
+  },
+  {
+    "path": "agent_harness.py",
+    "category": "A",
+    "action": "retain",
+    "reason": "Six-core runtime or on-demand Skill.",
+    "imported_by": [
+      "agent_tools.py",
+      "lab_evaluation.py",
+      "lab_evaluation_demo.py",
+      "research_memory.py",
+      "research_quality.py",
+      "scripts/check_agent_infrastructure.py",
+      "scripts/demo_harness.py",
+      "scripts/demo_memory_rsi.py",
+      "test_agent_harness.py",
+      "test_lab_evaluation.py",
+      "test_research_memory.py"
+    ],
+    "sha256": "c356ae253e440f557263822ac27e1f1a01ac7f3791596f362c9baf7f3247c26c"
+  },
+  {
+    "path": "agent_skills.py",
+    "category": "A",
+    "action": "retain",
+    "reason": "Six-core runtime or on-demand Skill.",
+    "imported_by": [
+      "agent_harness.py",
+      "lab_evaluation_demo.py",
+      "scripts/demo_harness.py",
+      "scripts/demo_memory_rsi.py",
+      "test_agent_harness.py",
+      "test_lab_evaluation.py"
+    ],
+    "sha256": "cb2d0347a129842fb6c11f055afbaf1e7b118703245e9619b8686b65832e4e18"
+  },
+  {
+    "path": "agent_skills/evidence-verification/SKILL.md",
+    "category": "A",
+    "action": "retain",
+    "reason": "Six-core runtime or on-demand Skill.",
+    "imported_by": [],
+    "sha256": "9b72bfe22a36492170d67f72dd0488ad43f68707ac3be4c3149867051b2e7088"
+  },
+  {
+    "path": "agent_skills/financial-analysis/SKILL.md",
+    "category": "A",
+    "action": "retain",
+    "reason": "Six-core runtime or on-demand Skill.",
+    "imported_by": [],
+    "sha256": "423db4cfcffa5646f22b67147e73d56f1910aa5560ee31b0b42476a0661b534d"
+  },
+  {
+    "path": "agent_skills/industry-research/SKILL.md",
+    "category": "A",
+    "action": "retain",
+    "reason": "Six-core runtime or on-demand Skill.",
+    "imported_by": [],
+    "sha256": "27064e38a4d0c41618d406af55360cff2f571e1e24afce2d5cc72b37acabcde6"
+  },
+  {
+    "path": "agent_tools.py",
+    "category": "A",
+    "action": "retain",
+    "reason": "Six-core runtime or on-demand Skill.",
+    "imported_by": [
+      "scripts/demo_harness.py",
+      "test_agent_harness.py"
+    ],
+    "sha256": "cede08f7f76f489faeb383d7a202ad37b3e64682526f104cc1a658e34a22a862"
+  },
+  {
+    "path": "analysis_contracts.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [
+      "analysis_workflow.py",
+      "evaluation_cases.py",
+      "m6_comparison.py",
+      "m6_frozen_trial.py",
+      "recoverable_pipeline.py",
+      "research_analysis.py",
+      "research_pipeline.py",
+      "research_rsi.py",
+      "scripts/audit_m6.py",
+      "scripts/container_fixture.py",
+      "test_m4_contracts.py",
+      "test_m4_workflow.py",
+      "test_m5_recovery.py",
+      "test_m6_prompt_versions.py"
+    ],
+    "sha256": "c5eb03834ba5f7e0c4058fce87f30494f3338b1f23aab44dbde020f3447a3a3c"
+  },
+  {
+    "path": "analysis_workflow.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [
+      "evaluation_cases.py",
+      "m4_experiments.py",
+      "m6_comparison.py",
+      "m6_frozen_trial.py",
+      "m7_maintenance.py",
+      "recoverable_pipeline.py",
+      "research_analysis.py",
+      "research_pipeline.py",
+      "research_service.py",
+      "scripts/audit_m4.py",
+      "scripts/audit_m6.py",
+      "test_m4_workflow.py",
+      "test_m7_maintenance.py"
+    ],
+    "sha256": "2c2a1319ac8203bb24733bdafba3807052f81b51fec413b40f9fa083ab20feb1"
+  },
+  {
+    "path": "api_client.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [
+      "aeternitas.py",
+      "scripts/audit_m3.py",
+      "scripts/audit_m4.py",
+      "scripts/audit_m5.py",
+      "scripts/audit_m6.py",
+      "scripts/smoke_m7.py",
+      "test_m3_application.py",
+      "test_m5_api.py"
+    ],
+    "sha256": "b3eb22a473b5ded1f209a93ca9a669a833a9160820b261008531f53c38621c5a"
+  },
+  {
+    "path": "candidate_registry.py",
+    "category": "A",
+    "action": "retain",
+    "reason": "Six-core runtime or on-demand Skill.",
+    "imported_by": [
+      "lab_evaluation_demo.py",
+      "research_rsi.py",
+      "research_validation.py",
+      "scripts/demo_memory_rsi.py",
+      "scripts/manage_candidates.py",
+      "scripts/run_quality_validation.py",
+      "test_lab_evaluation.py",
+      "test_research_rsi.py",
+      "test_research_validation.py"
+    ],
+    "sha256": "5d7ad966916fe997c62d62652ade755e8727999a8331560dab3cbe31a3bfe84b"
+  },
+  {
+    "path": "chatgpt_auth.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [
+      "aeternitas.py",
+      "agent_harness.py",
+      "lab_agent_batch.py",
+      "research_pipeline.py",
+      "research_rsi.py",
+      "research_service.py",
+      "research_validation.py",
+      "research_workflow.py",
+      "scripts/audit_m5.py",
+      "scripts/audit_m7.py",
+      "scripts/compare_m6.py",
+      "scripts/probe_model_stream.py",
+      "scripts/run_quality_validation.py",
+      "test_chatgpt_auth.py"
+    ],
+    "sha256": "7d9b1264b8c4df9e65c4a37e4499593beaf51c9e0f268009b12f371abeb8efa0"
+  },
+  {
+    "path": "chatgpt_stream.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [
+      "research_analysis.py",
+      "scripts/probe_model_stream.py",
+      "test_chatgpt_auth.py",
+      "test_chatgpt_stream_contract.py",
+      "test_lab_core_boundaries.py",
+      "test_m4_capabilities.py"
+    ],
+    "sha256": "8d523e6a8667e8e1b80df0daf0fcad7e9eabcce7c48a35dc7a72de424c70f613"
+  },
+  {
+    "path": "company_identity.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [
+      "fetch_financials.py",
+      "report_frontend/build.py",
+      "research_service.py",
+      "test_company_identity.py"
+    ],
+    "sha256": "7386806813d0c6816b5d8149cce010d4211f3640d8331edcea0c5a318f3956a0"
+  },
+  {
+    "path": "compose.yaml",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "64d347967cf34d7a6d2fdf81aabd36e9530cc28f90bcbec71c1f28d1e429a97b"
+  },
+  {
+    "path": "config/companies.json",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "44361d0ebdc01c9f0f798aa0de966e3ac1f540a63dbab18063f705913b9ae6f9"
+  },
+  {
+    "path": "config/container-empty-auth/.keep",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "47df66595168b96840d9be90317c3894d8ebbb0b5da84a3dd4797c5913c599ec"
+  },
+  {
+    "path": "config/container.env.example",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "acf8edc3feb6ac1c37fdaea20aee2f075aced74d2294f988881f09b376c52e38"
+  },
+  {
+    "path": "config/postgres-init.sh",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "3e88b9db5d179bc10a9ddce20631cafc91f34bf7a8e4a628977d87f95bc446e5"
+  },
+  {
+    "path": "config/research_cloud_compute_power.json",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "21308cfa93cbb01497960a4cf9dead5579805b57a598af08add97c625b5bb270"
+  },
+  {
+    "path": "docs/ADAPTIVE_ARCHITECTURE_AUDIT.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "15378360a6f446cc2c454e8a4e9fade277fe83a886d976303506ce12a3cc5d9b"
+  },
+  {
+    "path": "docs/ADAPTIVE_DATA_COVERAGE.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "bc1fa6fe3ac20419533333723c1396efc60859a1bf98d4db6fb48569bd114e6b"
+  },
+  {
+    "path": "docs/ADAPTIVE_REVIEW_CONSOLIDATED_20261027.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "6ee90394646f35ec326aa5d8d4ffff6ddcec22c4f2e7cf29d7189cfb84dd56bb"
+  },
+  {
+    "path": "docs/ADAPTIVE_ROADMAP.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "6e809ec5beedf4a8441796ccd7cdc0d3c143eb8bab4017ddc7f643ab6cdbd42e"
+  },
+  {
+    "path": "docs/ADAPTIVE_TARGET_ARCHITECTURE.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "2516fabe9873b37b3d2e7f3ac1e613b275f252003e9756498daacd167d311899"
+  },
+  {
+    "path": "docs/ARCHITECTURE.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "03b19d16816fc65e87d73e8ec4928d750271c06859f9c437cd84276bb53ebacc"
+  },
+  {
+    "path": "docs/COMPANY_DISCOVERY.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "4b56b4876cc2ff1baca5f233b7a36044a8cbcba326b68c400900dd1064e3fede"
+  },
+  {
+    "path": "docs/LAB_AGENT_HARNESS_V1.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "fe9884e6013a7b28eb79c891c05adb8f3ed7969e47a687fdce4b09325c236d45"
+  },
+  {
+    "path": "docs/LAB_AGENT_INFRASTRUCTURE_V1.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "6c7e6978b591858db93b7feaaa048079d8a231bdf051f8b72e872f57bac6b584"
+  },
+  {
+    "path": "docs/LAB_EVALUATION_V1.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "145102c443be73e6075419c5b3c3645a3b9ffd8b9149d252a98e50d19a5f403b"
+  },
+  {
+    "path": "docs/LAB_MARKET_DATA_V1.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "abdcd2b3e456735af10d17c2eec48b25c8b592d42dfc98569b35b22cdc56db26"
+  },
+  {
+    "path": "docs/LAB_PRICE_EXPERIMENT_V1.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "e38adf792aaa820e07e21141a7203da2261e3d53df5245071d19a0d296b40895"
+  },
+  {
+    "path": "docs/LAB_PROSPECTIVE_SNAPSHOT_V1.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "03d3fcda18521ef22c0aff22ee84c9490008a313b6357278fd04ce2f6590c795"
+  },
+  {
+    "path": "docs/LAB_RESEARCH_AGENT_V0.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "5f4ed8f03e8ae0064f5b6870088b3f3706547c165c67eceb6f4744398cd10277"
+  },
+  {
+    "path": "docs/LAB_RESEARCH_INTELLIGENCE_V1_3.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "fd7ada12c9b07e8e2d68829d3a8176c950f211ff960eefbbddde21a72f5438fa"
+  },
+  {
+    "path": "docs/LAB_RESEARCH_RSI_V1_1.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "23506a21aa6ebb4bf466e887f4f1ef9c78c4ae8c421630087bbae0e68f4d2935"
+  },
+  {
+    "path": "docs/LAB_RESEARCH_WORKFLOW_V1.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "702d1748164fe08c75a0e8568aebbfb0492a1dc29644168d35af0da7fda86e70"
+  },
+  {
+    "path": "docs/LAB_RSI_INDEPENDENT_VALIDATION_V1_2.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "4607c66de1865dac07f62642ab4d8bc3facf6ceaa5562a51ff903425e51f318b"
+  },
+  {
+    "path": "docs/LAB_RSI_V1_3_INTEGRATION.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "a26219a70e650dcbcda77b5693e1c43748133e6aed1b1a7c4201b2ccde83c2a9"
+  },
+  {
+    "path": "docs/LAB_TIME_MACHINE_V1.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "2c4a42a10058e0b8db342085fc5e87fe9fdf705db135c95b1952a4eebf70580a"
+  },
+  {
+    "path": "docs/LAB_VST_CSV_IMPORT.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "268c6107123189935e3b59073c041443b3c3b2320381b0987926281d3ab19388"
+  },
+  {
+    "path": "docs/M1_FINANCIAL_API.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "03a3c92843d5a0530edaaa408d73b0780f4cd814989a518a55bed575de215a6f"
+  },
+  {
+    "path": "docs/M1_RESEARCH_PIPELINE.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "b5a6ad42a533e65d965e5a8561756c7ca56c91ebb709169bc592cbd7b114609f"
+  },
+  {
+    "path": "docs/M2_DATA_CONTRACTS.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "dcca777d3a16b9e3a31f2a441dfdfe807ead02813e63906eaa549c61ee5851ea"
+  },
+  {
+    "path": "docs/M3_APPLICATION.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "7503a8587ebe22b4200093f16828135c490520ad3c1807bdd35eb4fbdce78271"
+  },
+  {
+    "path": "docs/M4_ANALYSIS_CHECKS.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "bfa4bb82f8929b49505098544e71bf3b2b6ce420cdda3a1cd4c4f0b859e16fcf"
+  },
+  {
+    "path": "docs/M5_RECOVERY.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "88396c17fb55ac98795c5aac811566e1651f35a0e97d6430ff7b56d0fdf642fd"
+  },
+  {
+    "path": "docs/M6_EVALUATION.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "90a57ac790bd55d807d13dba1903663d6ed93bc1659e07bb6c642fdf88d70fd2"
+  },
+  {
+    "path": "docs/M7_CHANGE_EXERCISE.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "32efb22c4a371e1f8effae95445c4ccc7f1ea2b1e7e53165ed75949fd59789f4"
+  },
+  {
+    "path": "docs/M7_RELEASE.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "5dee5731ac0fcb0d5b7e31efecd50357de514332994319f17be770ae8f616715"
+  },
+  {
+    "path": "docs/PACKAGE_README.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "117ec8335dc000f7b30c392080a2f9fce53b1f7880902fbae8d4225f64583ed5"
+  },
+  {
+    "path": "docs/REFERENCES_AND_LICENSES.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "4e9746c013cb8dacb29c2e7892f183413d06934433c57e0cf388ade77c7466f7"
+  },
+  {
+    "path": "docs/design/company-discovery.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "427eba42b5ce25cfaba2f37bb4485dab07c461a1ebc234594b07081b80a362b3"
+  },
+  {
+    "path": "evals/m6/development/D01.json",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "39d5e9a990e0a8b8a26bf468aac48219821193f6b8cc2f09d0e8a604959427db"
+  },
+  {
+    "path": "evals/m6/development/D02.json",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "460a3ef2f679e582f3de4029f60712ea3079d90d76f4dc79ff9886a0c6155288"
+  },
+  {
+    "path": "evals/m6/development/D03.json",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "ef78bff59fcfe04ef97a954c4cb1891021bb771e8d05719e7ee7804380578c8e"
+  },
+  {
+    "path": "evals/m6/development/D04.json",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "1ce5fbabaf093f28200c5dd12b82afd0e18525c86c47f5348b896d4ed358a87a"
+  },
+  {
+    "path": "evals/m6/development/D05.json",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "1013c2e662ad1983e7662e06b6e4bbd5b5e7adca75fe5e10bb914e856f277134"
+  },
+  {
+    "path": "evals/m6/development/D06.json",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "282f73d05b3c501dbce917cef127f4deadee8e61dd3a4aaa04f313743f412893"
+  },
+  {
+    "path": "evals/m6/development/D07.json",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "aa9cba98fab6cef19a768f0d14a4e12c56ea8da850757568d6e31f8c88a2d145"
+  },
+  {
+    "path": "evals/m6/development/D08.json",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "d1080d6b9f42dcf9c513b102fe8879dd87ba81eb44a436d5e337d2b0b7fe397d"
+  },
+  {
+    "path": "evals/m6/development/manifest.json",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "b8f5a1262a65bdd3acdc507932db9e72f48058996d161e82a1fa63b4d1221930"
+  },
+  {
+    "path": "evals/m6/holdout-manifest.json",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "e20d4b23a056ef0a37b88653294eb39317b7763802c77e9d05d26fea1e863bcb"
+  },
+  {
+    "path": "evals/m6/holdout/H01.json",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "1d928a8f6d33c6485bd2136e5cf92b6e6febbb774660bff948fea3176f861d65"
+  },
+  {
+    "path": "evals/m6/holdout/H02.json",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "c3643fa6ae3af7a42d52eb2d5a7e8997f71b21d306fd1c7045849441a91502a6"
+  },
+  {
+    "path": "evals/m6/holdout/H03.json",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "b4eaa2b1b6980e3bbdeadb281a1f0c036c938f806221c1ebeb6fd2ee489e88ec"
+  },
+  {
+    "path": "evals/m6/holdout/H04.json",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "a87f701a9d78a9a82c53c74d38c058cc53dae9c5dac656c9d18f80b318dd07ad"
+  },
+  {
+    "path": "evals/m6/holdout/manifest.json",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "e20d4b23a056ef0a37b88653294eb39317b7763802c77e9d05d26fea1e863bcb"
+  },
+  {
+    "path": "evals/m6/protocol.json",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "d89939d29944f3f5fb31798528682cda1348edc62bcea00bb873ce9dc8d58dea"
+  },
+  {
+    "path": "evaluation_cases.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [
+      "lab_evaluation.py",
+      "scripts/evaluate_m6.py",
+      "test_m6_evaluations.py"
+    ],
+    "sha256": "92eb51c60137cc1caa551e90aa3af9aeb91afea9fc6e56945210e7406302dac9"
+  },
+  {
+    "path": "evidence_repository.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [
+      "aeternitas.py",
+      "candidate_registry.py",
+      "infrastructure_rsi.py",
+      "lab_agent_batch.py",
+      "lab_evaluation.py",
+      "lab_evaluation_demo.py",
+      "lab_price_experiment.py",
+      "local_api.py",
+      "m6_frozen_trial.py",
+      "m7_maintenance.py",
+      "prospective_snapshot.py",
+      "recoverable_pipeline.py",
+      "research_agent.py",
+      "research_contract_profile.py",
+      "research_intelligence.py",
+      "research_pipeline.py",
+      "research_quality.py",
+      "research_rsi.py",
+      "research_service.py",
+      "research_validation.py",
+      "research_workflow.py",
+      "scripts/accept_m5_live.py",
+      "scripts/audit_m2.py",
+      "scripts/audit_m3.py",
+      "scripts/audit_m4.py",
+      "scripts/audit_m5.py",
+      "scripts/audit_m6.py",
+      "scripts/audit_m6_sources.py",
+      "scripts/audit_m7.py",
+      "scripts/container_app.py",
+      "scripts/measure_m5.py",
+      "scripts/run_quality_validation.py",
+      "scripts/smoke_m7.py",
+      "test_evidence_repository.py",
+      "test_lab_evaluation.py",
+      "test_m3_application.py",
+      "test_m5_recovery.py",
+      "test_m5_repository.py",
+      "test_m6_dataset_mode.py",
+      "test_m6_frozen_trial.py",
+      "test_m6_source_campaign.py",
+      "test_m7_maintenance.py",
+      "test_m7_postgres_init.py",
+      "test_research_intelligence.py",
+      "test_research_rsi.py",
+      "test_research_validation.py",
+      "time_machine.py"
+    ],
+    "sha256": "7cac906895c85653aeae663ab4d96bda3a543a270a3b2952f840695f2c0b831e"
+  },
+  {
+    "path": "evidence_selection.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [
+      "analysis_workflow.py",
+      "evaluation_cases.py",
+      "research_intelligence.py",
+      "research_workflow.py",
+      "test_m4_evidence.py"
+    ],
+    "sha256": "b9ec6506b026a4f615023d87ec43028bed1ed634b1c5f02af63b1238e7b2b695"
+  },
+  {
+    "path": "examples/AAPL/report.html",
+    "category": "D",
+    "action": "remove_from_current_tree",
+    "reason": "Generated example/UI review or already-applied debug patch; not runtime input.",
+    "imported_by": [],
+    "sha256": "6a62f178d62a57134bd4dbb4ab8acec6a471767ae7481b9b672f1409a128da8c"
+  },
+  {
+    "path": "examples/AAPL/report.json",
+    "category": "D",
+    "action": "remove_from_current_tree",
+    "reason": "Generated example/UI review or already-applied debug patch; not runtime input.",
+    "imported_by": [],
+    "sha256": "76c667db52c5c87951a2a76049e92674b35531bd9a4d9eb2b76fd9c14453379a"
+  },
+  {
+    "path": "examples/MSFT/report.html",
+    "category": "D",
+    "action": "remove_from_current_tree",
+    "reason": "Generated example/UI review or already-applied debug patch; not runtime input.",
+    "imported_by": [],
+    "sha256": "745c33a20280b6fe2ca52ccf0f9047319077104528ae54c70ad7ef7187fc57d9"
+  },
+  {
+    "path": "examples/MSFT/report.json",
+    "category": "D",
+    "action": "remove_from_current_tree",
+    "reason": "Generated example/UI review or already-applied debug patch; not runtime input.",
+    "imported_by": [],
+    "sha256": "ac3c63def4c1b6efa011b02454b9e5bd86e107d5c37b7b23a2218f73491fa69a"
+  },
+  {
+    "path": "examples/README.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "5b5240d78b57b4cab390aab812bc9c8fbe21238f8e5a084d180cba9a311e05fe"
+  },
+  {
+    "path": "examples/run-manifest.json",
+    "category": "D",
+    "action": "remove_from_current_tree",
+    "reason": "Generated example/UI review or already-applied debug patch; not runtime input.",
+    "imported_by": [],
+    "sha256": "ec792b90ae8590a24ce060923dba8baa3d5169737990a7df2bc11157ddab3725"
+  },
+  {
+    "path": "fetch_financials.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [
+      "test_fetch_financials.py"
+    ],
+    "sha256": "a9fb66f7aeab51f970efe0616edbff8c128b25fbc20d699dbe4419c692fb8f60"
+  },
+  {
+    "path": "filing_fact_audit.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [
+      "scripts/audit_m2.py",
+      "scripts/audit_m3.py",
+      "scripts/audit_m4.py",
+      "scripts/audit_m5.py",
+      "scripts/audit_m6_sources.py",
+      "test_filing_fact_audit.py"
+    ],
+    "sha256": "f7e7e0dbb863268820de0ef11488698126e3337e5d6d8cc71144d43cf978acf0"
+  },
+  {
+    "path": "filing_source.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [
+      "research_inputs.py",
+      "research_pipeline.py",
+      "scripts/audit_m6_sources.py",
+      "test_m2_contracts.py",
+      "test_research_sources.py"
+    ],
+    "sha256": "058a7b985ebf8d97a45ff584160ea1d38407af313f14d8fab480bbfeaa234960"
+  },
+  {
+    "path": "financial_facts.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [
+      "evaluation_cases.py",
+      "fetch_financials.py",
+      "filing_fact_audit.py",
+      "research_inputs.py",
+      "research_pipeline.py",
+      "scripts/audit_m6_sources.py",
+      "test_financial_facts.py",
+      "test_m2_contracts.py"
+    ],
+    "sha256": "935c4aefd1abcbf5af21f1a6293faf5a40ac6168f1f5255c75337daca3437a5f"
+  },
+  {
+    "path": "harness_contracts.py",
+    "category": "A",
+    "action": "retain",
+    "reason": "Six-core runtime or on-demand Skill.",
+    "imported_by": [
+      "agent_harness.py",
+      "agent_skills.py",
+      "agent_tools.py",
+      "lab_evaluation.py",
+      "research_contract_profile.py",
+      "research_quality.py",
+      "research_validation.py",
+      "test_agent_harness.py"
+    ],
+    "sha256": "df310e6254706c503acb22f7b9853c66d6ab1cd97b1e1a4c826600c44272ead1"
+  },
+  {
+    "path": "infrastructure_rsi.py",
+    "category": "A",
+    "action": "retain",
+    "reason": "Six-core runtime or on-demand Skill.",
+    "imported_by": [
+      "scripts/demo_memory_rsi.py"
+    ],
+    "sha256": "007a18835286500292b62e659f156d020299be444dfec794ffe12f40468d89fa"
+  },
+  {
+    "path": "lab_agent_batch.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Retired price-prediction/teaching/one-off experiment and its caller closure; no remaining runtime import.",
+    "imported_by": [
+      "test_lab_agent_batch.py"
+    ],
+    "sha256": "8b1b4e85d4ee57c4975ba038d391adc3f15d560ba7540d72f005016db57b313b"
+  },
+  {
+    "path": "lab_evaluation.py",
+    "category": "A",
+    "action": "retain",
+    "reason": "Six-core runtime or on-demand Skill.",
+    "imported_by": [
+      "candidate_registry.py",
+      "infrastructure_rsi.py",
+      "lab_evaluation_demo.py",
+      "research_rsi.py",
+      "research_validation.py",
+      "scripts/demo_memory_rsi.py",
+      "scripts/manage_candidates.py",
+      "test_lab_evaluation.py",
+      "test_research_rsi.py",
+      "test_research_validation.py"
+    ],
+    "sha256": "70800538e0a0fa15b45f1df3bb947ecda13cf4f589fd5b227e4df487fe9a2014"
+  },
+  {
+    "path": "lab_evaluation_demo.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [
+      "scripts/demo_evaluation.py",
+      "test_lab_evaluation.py"
+    ],
+    "sha256": "a187d59696eb96563aa9d59099e3d3b045ddd28221aa0952d7557327290c1ae7"
+  },
+  {
+    "path": "lab_price_experiment.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Retired price-prediction/teaching/one-off experiment and its caller closure; no remaining runtime import.",
+    "imported_by": [
+      "lab_agent_batch.py",
+      "prospective_snapshot.py",
+      "research_agent.py",
+      "test_lab_price_experiment.py"
+    ],
+    "sha256": "04b3ce23fb314a84be68bc63a4681dcaece540d1046765dfe8745fa62843fb2f"
+  },
+  {
+    "path": "langfuse_adapter.py",
+    "category": "A",
+    "action": "retain",
+    "reason": "Six-core runtime or on-demand Skill.",
+    "imported_by": [
+      "lab_evaluation_demo.py",
+      "scripts/check_agent_infrastructure.py",
+      "scripts/demo_evaluation.py",
+      "scripts/demo_memory_rsi.py",
+      "scripts/run_independent_validation.py",
+      "scripts/run_research_rsi.py",
+      "test_infrastructure_telemetry.py",
+      "test_lab_evaluation.py"
+    ],
+    "sha256": "abfb83ce62eae293903ea08754fc246689831a14bc2f387452b185f5d08d98cc"
+  },
+  {
+    "path": "local_api.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [
+      "aeternitas.py",
+      "api_client.py",
+      "scripts/accept_m5_live.py",
+      "scripts/audit_m3.py",
+      "scripts/audit_m4.py",
+      "scripts/audit_m5.py",
+      "scripts/audit_m7.py",
+      "scripts/container_app.py",
+      "scripts/measure_m5.py",
+      "test_m3_application.py",
+      "test_m5_api.py",
+      "test_m5_recovery.py",
+      "test_m6_frozen_trial.py",
+      "test_m7_maintenance.py"
+    ],
+    "sha256": "1e36ea7cec9ef38e1156a5aa51fae3938f2600b5dc43c11c5d002512033aee27"
+  },
+  {
+    "path": "m1_analysis_repair_fix.patch",
+    "category": "D",
+    "action": "remove_from_current_tree",
+    "reason": "Generated example/UI review or already-applied debug patch; not runtime input.",
+    "imported_by": [],
+    "sha256": "d79b645454a2b97f10e511983bb7ff3c9667d6112336a76cb15fc4c9b27c1809"
+  },
+  {
+    "path": "m1_chatgpt_login.patch",
+    "category": "D",
+    "action": "remove_from_current_tree",
+    "reason": "Generated example/UI review or already-applied debug patch; not runtime input.",
+    "imported_by": [],
+    "sha256": "634db641d01acdac1c121e8dbc9ed69d5409c3fc53f7e0de6d409861066d247c"
+  },
+  {
+    "path": "m1_financial_api.patch",
+    "category": "D",
+    "action": "remove_from_current_tree",
+    "reason": "Generated example/UI review or already-applied debug patch; not runtime input.",
+    "imported_by": [],
+    "sha256": "807d7df8a7d153bef73b9c0fee1e1eafa3b8c219935d318e86dc04ea837963d4"
+  },
+  {
+    "path": "m1_research_pipeline.patch",
+    "category": "D",
+    "action": "remove_from_current_tree",
+    "reason": "Generated example/UI review or already-applied debug patch; not runtime input.",
+    "imported_by": [],
+    "sha256": "587d820442153808ade809cbd9b47b6b7c575bd28d0f983151c9c2a777f7b8e9"
+  },
+  {
+    "path": "m1_stream_header_fix.patch",
+    "category": "D",
+    "action": "remove_from_current_tree",
+    "reason": "Generated example/UI review or already-applied debug patch; not runtime input.",
+    "imported_by": [],
+    "sha256": "c632c3a3874cec5403795525813172795eefa443377c531795696197cb84451c"
+  },
+  {
+    "path": "m4_experiments.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Retired price-prediction/teaching/one-off experiment and its caller closure; no remaining runtime import.",
+    "imported_by": [
+      "test_m4_capabilities.py"
+    ],
+    "sha256": "6d7f600a8d1df031a517526ef7ae826f79f7736549bf00b2ecfb7e5459857263"
+  },
+  {
+    "path": "m6_comparison.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Retired price-prediction/teaching/one-off experiment and its caller closure; no remaining runtime import.",
+    "imported_by": [
+      "m6_frozen_trial.py",
+      "scripts/compare_m6.py",
+      "test_m6_comparison.py",
+      "test_m6_frozen_trial.py"
+    ],
+    "sha256": "89c13549215ffbc7584b75249cf74035cdf32972071bbb6f5b717f07f87f0cfa"
+  },
+  {
+    "path": "m6_frozen_trial.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Retired price-prediction/teaching/one-off experiment and its caller closure; no remaining runtime import.",
+    "imported_by": [
+      "scripts/replicate_m6.py",
+      "test_m6_frozen_trial.py"
+    ],
+    "sha256": "5985ab356a3ee4d77ea10d02e8908a16f8ae9d45f98887a0e33697aa8f3e62e1"
+  },
+  {
+    "path": "m7_maintenance.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [
+      "scripts/audit_m7.py",
+      "scripts/backup_m7.py",
+      "scripts/maintain_m7.py",
+      "scripts/restore_m7.py",
+      "test_m7_maintenance.py"
+    ],
+    "sha256": "a8b7e3374c03f6aa9fd88d9d9176699edb8136d2d5482da7a863015c43982604"
+  },
+  {
+    "path": "market_data.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [
+      "aeternitas.py",
+      "lab_agent_batch.py",
+      "lab_price_experiment.py",
+      "prospective_snapshot.py",
+      "research_agent.py",
+      "test_lab_price_experiment.py",
+      "test_market_data.py",
+      "test_research_agent.py",
+      "test_yahoo_csv.py",
+      "time_machine.py",
+      "yahoo_csv.py"
+    ],
+    "sha256": "f82fb28f6e6798d4f6fe4b14b13473413fe73b013da11ca7e4142fe22e0a33b4"
+  },
+  {
+    "path": "migrations/001_evidence.sql",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "f9431e78d5039a0e3b2c86ab371d6fd270fc3d0c9689bf049b5e798499c7354b"
+  },
+  {
+    "path": "migrations/002_company_boundaries.sql",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "2362a81452e739fb529aebe8b0823185a66b26ec201cc522b89c54d284034519"
+  },
+  {
+    "path": "migrations/003_research_runs.sql",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "faf486f8accac7352e2b64fa3cb93f3dc93fdb8d06dcc3ea41100607f90c83b2"
+  },
+  {
+    "path": "migrations/004_task_boundaries.sql",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "76e8b5335a0caca5bba9b2227d9b36f66435cea87432652c01c348572184e75b"
+  },
+  {
+    "path": "migrations/005_run_recovery.sql",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "7c2f2d7f251115a5307b63f026eeae10301ea25c29eea0b8f1c34d6a0a8e32de"
+  },
+  {
+    "path": "migrations/006_frozen_live_evidence.sql",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "1f9219a4f32cda7563e8015836b667ee54e4a1c545e876e1518ea5b64f1001fb"
+  },
+  {
+    "path": "news_source.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [
+      "evaluation_cases.py",
+      "research_inputs.py",
+      "research_pipeline.py",
+      "scripts/audit_m6_sources.py",
+      "test_m2_contracts.py",
+      "test_research_sources.py"
+    ],
+    "sha256": "8a29d3e5d46d303334967062aaca648c4a68df4ca9ac4eeabd20ff0327ceb7f0"
+  },
+  {
+    "path": "point_in_time.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [
+      "aeternitas.py",
+      "lab_price_experiment.py",
+      "market_data.py",
+      "prospective_snapshot.py",
+      "research_agent.py",
+      "test_market_data.py",
+      "test_point_in_time.py",
+      "time_machine.py",
+      "yahoo_csv.py"
+    ],
+    "sha256": "e6ac6c4de70dbcd063752812b90dd9e7017a1f705bd9b42402cab7542919ff68"
+  },
+  {
+    "path": "prompts/m4/common-v1.md",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "2f050e451fdc59bfd46820501f35ab0ba49c9545da2777bf8a1e03d4b471b6f4"
+  },
+  {
+    "path": "prompts/m4/events-v1.md",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "7550dc732d336d5fa5110a2c4c5c16112017b75ce18f83fdcb0970750634504b"
+  },
+  {
+    "path": "prompts/m4/fundamentals-v1.md",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "f19724b8f7326399724e48e97c311af0386b46bb452814b1b1aa687dccfe345e"
+  },
+  {
+    "path": "prompts/m4/risk-v1.md",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "44697480ad396a00126b61de1fdf4ebe13ab411ca55412d14ac2d476b358ef49"
+  },
+  {
+    "path": "prompts/m4/synthesis-v1.md",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "c315e0473cd9b1ee090f8d1d6a5e2a266e36807dc2a45fbc0c94d041a46e3bb6"
+  },
+  {
+    "path": "prompts/m6/common-v1.md",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "8638f037ad8da7829ccd15de3f2fe35c2538ea166cc277364e5e19bfd3a86a29"
+  },
+  {
+    "path": "prompts/m6/events-v1.md",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "a1f3fd02d497dccfcbb5326421e87868d5a4d374854b75018c6b5e83278abe0b"
+  },
+  {
+    "path": "prompts/m6/fundamentals-v1.md",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "f5d7321a780d3f0f32a96c29b05a1fc3966415f6965f79e8a24ea115d7d565ab"
+  },
+  {
+    "path": "prompts/m6/risk-v1.md",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "dc88fc030dc4e88ab6c9d719231dd471aa2b100218ed6e38419bfaabbd72e3ce"
+  },
+  {
+    "path": "prompts/m6/synthesis-v1.md",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "c948505123d17cf30d63a25a3b33cade2e4f54fef344bce2f54367dda4b6f653"
+  },
+  {
+    "path": "prospective_snapshot.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Retired price-prediction/teaching/one-off experiment and its caller closure; no remaining runtime import.",
+    "imported_by": [
+      "research_agent.py",
+      "test_prospective_snapshot.py"
+    ],
+    "sha256": "632112b37262f86356e7620325cce4fea64a1c5354c4e78c1ee9c3deeb7b616f"
+  },
+  {
+    "path": "pytest.ini",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "b0318551623c19ea9c8f6e0f67b95da422ac043f873b9cc0cffc2865f02773cf"
+  },
+  {
+    "path": "recoverable_pipeline.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [
+      "m6_comparison.py",
+      "m6_frozen_trial.py",
+      "research_service.py",
+      "scripts/audit_m5.py",
+      "scripts/audit_m6.py",
+      "test_m5_recovery.py"
+    ],
+    "sha256": "ea930b64e25f2dcfc78662875ea21fb08118a5032495df77c05e30c52361d157"
+  },
+  {
+    "path": "report_frontend/README.md",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Independent report frontend has no imports from retained Research Engine; standard HTML renderer retained.",
+    "imported_by": [],
+    "sha256": "42efd6decbf2d817a97f926a52b372d9ce230cd6abe6dd341e7b6e99490719cb"
+  },
+  {
+    "path": "report_frontend/__init__.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Independent report frontend has no imports from retained Research Engine; standard HTML renderer retained.",
+    "imported_by": [],
+    "sha256": "f0c034e6eed70aba97d2b2929a8618a1bc0b9bb99500c8092344aa969ee63526"
+  },
+  {
+    "path": "report_frontend/assets/fonts/InstrumentSerif-OFL.txt",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Independent report frontend has no imports from retained Research Engine; standard HTML renderer retained.",
+    "imported_by": [],
+    "sha256": "129ed7618959716959f2941fdd5b49e0ad6e6c1d78726761786a00253d865521"
+  },
+  {
+    "path": "report_frontend/assets/fonts/NotoSerifSC-OFL.txt",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Independent report frontend has no imports from retained Research Engine; standard HTML renderer retained.",
+    "imported_by": [],
+    "sha256": "5e0da210fb04058a8c0087985d2d456b931c2579811a49655721d3cf0c36b6d6"
+  },
+  {
+    "path": "report_frontend/assets/fonts/download-provenance.txt",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Independent report frontend has no imports from retained Research Engine; standard HTML renderer retained.",
+    "imported_by": [],
+    "sha256": "3f9f7c768bd51e06ba8ac4308425fb50ba9c298ee88cbfa06c5978ed2fd29917"
+  },
+  {
+    "path": "report_frontend/assets/fonts/instrument-serif-italic.ttf",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Independent report frontend has no imports from retained Research Engine; standard HTML renderer retained.",
+    "imported_by": [],
+    "sha256": "08939b8bdf534afec24ae0ef5e03f948940cd9a8fe08e7fecbad040e62327385"
+  },
+  {
+    "path": "report_frontend/assets/fonts/instrument-serif-regular.ttf",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Independent report frontend has no imports from retained Research Engine; standard HTML renderer retained.",
+    "imported_by": [],
+    "sha256": "498efd461f6ddfcb7a111bf9a565709d2085d48201d501ead960d93e84ffbb88"
+  },
+  {
+    "path": "report_frontend/assets/fonts/noto-serif-sc-heading.ttf",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Independent report frontend has no imports from retained Research Engine; standard HTML renderer retained.",
+    "imported_by": [],
+    "sha256": "c6e1097d4ecd4e8354177a52e180e0c57fe3651bf59dcac8c4451afe9614a770"
+  },
+  {
+    "path": "report_frontend/assets/logo.svg",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Independent report frontend has no imports from retained Research Engine; standard HTML renderer retained.",
+    "imported_by": [],
+    "sha256": "2643e9e61591f9989a3a31a46ac1e9eb99f43602465c1ed2df96c70424c6f519"
+  },
+  {
+    "path": "report_frontend/assets/site.css",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Independent report frontend has no imports from retained Research Engine; standard HTML renderer retained.",
+    "imported_by": [],
+    "sha256": "7a13114c346e4ba9a0ba45d30bc2788c9e881614b1c00b668222246b1321eb11"
+  },
+  {
+    "path": "report_frontend/assets/site.js",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Independent report frontend has no imports from retained Research Engine; standard HTML renderer retained.",
+    "imported_by": [],
+    "sha256": "d1741c10ea58f122e245ef6bfd6ad9d549001e77f093e33eb7c24fd301ba7aa3"
+  },
+  {
+    "path": "report_frontend/build.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Independent report frontend has no imports from retained Research Engine; standard HTML renderer retained.",
+    "imported_by": [],
+    "sha256": "eba6c6b073bda0cc8e3f58a492f0a2365f15523bb21421a6f4f4fbb424efcfed"
+  },
+  {
+    "path": "report_frontend/editorial.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Independent report frontend has no imports from retained Research Engine; standard HTML renderer retained.",
+    "imported_by": [],
+    "sha256": "9be120f55ca98912d126c683f7c22c5ed9b9fca4f88851cf33c6e6181f91f13c"
+  },
+  {
+    "path": "report_frontend/renderer.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Independent report frontend has no imports from retained Research Engine; standard HTML renderer retained.",
+    "imported_by": [],
+    "sha256": "c74f389df28f93a3aef46e690c4c02124a90097993244a847ec19068a10c4290"
+  },
+  {
+    "path": "report_frontend/serve.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Independent report frontend has no imports from retained Research Engine; standard HTML renderer retained.",
+    "imported_by": [],
+    "sha256": "42ca82ed33d4b661e504593a7c963de556c2e6c3519011145774edfc1f1e9ca1"
+  },
+  {
+    "path": "report_frontend/test_editorial.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Independent report frontend has no imports from retained Research Engine; standard HTML renderer retained.",
+    "imported_by": [],
+    "sha256": "61ac7883f109633f39d6fa7a6a6a41acfdc866bb6fdce0ceb198acdab400e970"
+  },
+  {
+    "path": "report_frontend/test_reader.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Independent report frontend has no imports from retained Research Engine; standard HTML renderer retained.",
+    "imported_by": [],
+    "sha256": "fc90181e20c8f176a1252d1a83c1475e3c3b7f4540ce019727111d9b7a771bcf"
+  },
+  {
+    "path": "requirements-memory.lock",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "cef601692fefb805a1c3fe696a4d68e64efcf7760b0ff268e43e98d8ed3e3071"
+  },
+  {
+    "path": "research_agent.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Retired price-prediction/teaching/one-off experiment and its caller closure; no remaining runtime import.",
+    "imported_by": [
+      "lab_agent_batch.py",
+      "prospective_snapshot.py",
+      "test_lab_agent_batch.py",
+      "test_prospective_snapshot.py",
+      "test_research_agent.py"
+    ],
+    "sha256": "92bfa453c38ae02bce1d650f977499bd2e7f371032f73c4eb5b06259e3c2e06e"
+  },
+  {
+    "path": "research_analysis.py",
+    "category": "A",
+    "action": "retain",
+    "reason": "Six-core runtime or on-demand Skill.",
+    "imported_by": [
+      "agent_harness.py",
+      "agent_tools.py",
+      "analysis_workflow.py",
+      "evaluation_cases.py",
+      "lab_agent_batch.py",
+      "m4_experiments.py",
+      "m6_comparison.py",
+      "m6_frozen_trial.py",
+      "recoverable_pipeline.py",
+      "research_agent.py",
+      "research_contract_profile.py",
+      "research_inputs.py",
+      "research_pipeline.py",
+      "research_rsi.py",
+      "research_test_support.py",
+      "research_workflow.py",
+      "scripts/measure_m5.py",
+      "test_agent_harness.py",
+      "test_analysis_repair.py",
+      "test_chatgpt_auth.py",
+      "test_chatgpt_stream_contract.py",
+      "test_m4_capabilities.py",
+      "test_m4_workflow.py",
+      "test_m5_measurement.py",
+      "test_m6_prompt_versions.py",
+      "test_research_agent.py",
+      "test_research_pipeline.py",
+      "test_research_workflow.py"
+    ],
+    "sha256": "9da6e31086e28a42954daa6e5307ac3cf3527813ce4861b94f7b06c50b5f88fe"
+  },
+  {
+    "path": "research_contract_profile.py",
+    "category": "A",
+    "action": "retain",
+    "reason": "Six-core runtime or on-demand Skill.",
+    "imported_by": [
+      "candidate_registry.py",
+      "research_rsi.py",
+      "research_validation.py",
+      "research_workflow.py",
+      "scripts/run_quality_validation.py",
+      "test_research_rsi.py",
+      "test_research_validation.py"
+    ],
+    "sha256": "4fee5f686d34e5f4dec21c11edff85851d0355fbc071dc4b925b1748e3b39721"
+  },
+  {
+    "path": "research_inputs.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [
+      "aeternitas.py",
+      "m4_experiments.py",
+      "recoverable_pipeline.py",
+      "research_pipeline.py",
+      "research_workflow.py",
+      "scripts/audit_m6_sources.py",
+      "scripts/smoke_m7.py",
+      "test_agent_harness.py",
+      "test_evidence_repository.py",
+      "test_m2_contracts.py",
+      "test_m4_evidence.py",
+      "test_m6_comparison.py",
+      "test_m6_frozen_trial.py",
+      "test_research_workflow.py"
+    ],
+    "sha256": "efd882f0c12faee00acc84c7eb2762b2e43d23d47fa509da413a9f587c63eee0"
+  },
+  {
+    "path": "research_intelligence.py",
+    "category": "A",
+    "action": "retain",
+    "reason": "Six-core runtime or on-demand Skill.",
+    "imported_by": [
+      "research_quality.py",
+      "scripts/audit_research_intelligence.py",
+      "test_research_intelligence.py",
+      "test_research_quality.py"
+    ],
+    "sha256": "1d5a934028a09114c1860a89ad0290ad7d0a27dfae1fe0c1a0ce1d420770e875"
+  },
+  {
+    "path": "research_memory.py",
+    "category": "A",
+    "action": "retain",
+    "reason": "Six-core runtime or on-demand Skill.",
+    "imported_by": [
+      "scripts/demo_memory_rsi.py",
+      "test_research_memory.py"
+    ],
+    "sha256": "db7366ef2f718e70ae1b7f69cfd7791e11d8b0ec985425f6f507cf52d5c48716"
+  },
+  {
+    "path": "research_observability.py",
+    "category": "A",
+    "action": "retain",
+    "reason": "Six-core runtime or on-demand Skill.",
+    "imported_by": [
+      "agent_harness.py",
+      "infrastructure_rsi.py",
+      "langfuse_adapter.py",
+      "research_workflow.py",
+      "scripts/check_agent_infrastructure.py",
+      "test_infrastructure_telemetry.py",
+      "test_lab_evaluation.py",
+      "test_research_workflow.py"
+    ],
+    "sha256": "4fcad2b6beb9181665e61291ce5511dfff58150f4c072ebcb252101e536e23b7"
+  },
+  {
+    "path": "research_pipeline.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [
+      "aeternitas.py",
+      "agent_tools.py",
+      "evaluation_cases.py",
+      "evidence_repository.py",
+      "m4_experiments.py",
+      "m6_comparison.py",
+      "m6_frozen_trial.py",
+      "m7_maintenance.py",
+      "point_in_time.py",
+      "recoverable_pipeline.py",
+      "report_frontend/build.py",
+      "research_intelligence.py",
+      "research_service.py",
+      "research_workflow.py",
+      "scripts/accept_m5_live.py",
+      "scripts/audit_m2.py",
+      "scripts/audit_m3.py",
+      "scripts/audit_m4.py",
+      "scripts/audit_m5.py",
+      "scripts/audit_m6.py",
+      "scripts/audit_m6_sources.py",
+      "scripts/audit_m7.py",
+      "scripts/compare_m6.py",
+      "scripts/export_release_examples.py",
+      "scripts/measure_m5.py",
+      "scripts/replicate_m6.py",
+      "scripts/smoke_m7.py",
+      "test_chatgpt_auth.py",
+      "test_evidence_repository.py",
+      "test_m2_contracts.py",
+      "test_m3_application.py",
+      "test_m4_workflow.py",
+      "test_m7_maintenance.py",
+      "test_point_in_time.py",
+      "test_research_pipeline.py"
+    ],
+    "sha256": "e13063f30653abb0b385234e0bfe280bd0556eff34d7c0562879b7ed5b8f0b65"
+  },
+  {
+    "path": "research_quality.py",
+    "category": "A",
+    "action": "retain",
+    "reason": "Six-core runtime or on-demand Skill.",
+    "imported_by": [
+      "research_workflow.py",
+      "scripts/run_quality_validation.py",
+      "test_oracle_evidence_contract.py",
+      "test_research_quality.py"
+    ],
+    "sha256": "0498a845c0107b201d329f0c189c5bf977cf8c2c0b921efda9b26c970b3422aa"
+  },
+  {
+    "path": "research_report.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [
+      "aeternitas.py",
+      "m6_comparison.py",
+      "recoverable_pipeline.py",
+      "research_pipeline.py",
+      "research_workflow.py",
+      "test_m7_maintenance.py"
+    ],
+    "sha256": "dc3e37c2e94a03b6766915e6712df64200e3c1c90045d60aa01943c3c1896d8a"
+  },
+  {
+    "path": "research_rsi.py",
+    "category": "A",
+    "action": "retain",
+    "reason": "Six-core runtime or on-demand Skill.",
+    "imported_by": [
+      "research_validation.py",
+      "scripts/run_quality_validation.py",
+      "scripts/run_research_rsi.py",
+      "test_research_rsi.py",
+      "test_research_validation.py"
+    ],
+    "sha256": "210ac0d5d6a1c63bd41f5d25ff5fab0a910cfc4a36ea0a8cfe1929684e0b36de"
+  },
+  {
+    "path": "research_runtime.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [
+      "aeternitas.py",
+      "agent_harness.py",
+      "candidate_registry.py",
+      "company_identity.py",
+      "lab_agent_batch.py",
+      "lab_evaluation.py",
+      "lab_evaluation_demo.py",
+      "m4_experiments.py",
+      "m6_comparison.py",
+      "m6_frozen_trial.py",
+      "market_data.py",
+      "news_source.py",
+      "recoverable_pipeline.py",
+      "research_agent.py",
+      "research_inputs.py",
+      "research_observability.py",
+      "research_pipeline.py",
+      "research_report.py",
+      "research_rsi.py",
+      "research_validation.py",
+      "research_workflow.py",
+      "scripts/accept_m5_live.py",
+      "scripts/audit_m2.py",
+      "scripts/audit_m3.py",
+      "scripts/audit_m4.py",
+      "scripts/audit_m5.py",
+      "scripts/audit_m6.py",
+      "scripts/audit_m6_sources.py",
+      "scripts/measure_m5.py",
+      "scripts/probe_model_stream.py",
+      "scripts/run_quality_validation.py",
+      "scripts/smoke_m7.py",
+      "test_agent_harness.py",
+      "test_analysis_repair.py",
+      "test_chatgpt_auth.py",
+      "test_chatgpt_stream_contract.py",
+      "test_evidence_repository.py",
+      "test_lab_core_boundaries.py",
+      "test_m2_contracts.py",
+      "test_m4_capabilities.py",
+      "test_m4_evidence.py",
+      "test_m6_comparison.py",
+      "test_m6_frozen_trial.py",
+      "test_research_agent.py",
+      "test_research_pipeline.py",
+      "test_research_sources.py",
+      "test_research_workflow.py"
+    ],
+    "sha256": "cd73c840c1adee3c11491426190d1f12bebd0f5419ac35b7b3cf9fc4482d4b5f"
+  },
+  {
+    "path": "research_service.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [
+      "aeternitas.py",
+      "api_client.py",
+      "local_api.py",
+      "m7_maintenance.py",
+      "research_worker.py",
+      "scripts/accept_m5_live.py",
+      "scripts/audit_m7.py",
+      "scripts/backup_m7.py",
+      "scripts/container_app.py",
+      "scripts/maintain_m7.py",
+      "scripts/measure_m5.py",
+      "scripts/replicate_m6.py",
+      "test_m3_application.py",
+      "test_m5_api.py",
+      "test_m5_plan_retry.py",
+      "test_m5_recovery.py",
+      "test_m6_frozen_trial.py",
+      "test_m7_maintenance.py"
+    ],
+    "sha256": "c878d1788efe635f6b137a78b4fe50e0d56d62cc52d4bf02130a1876b819eb86"
+  },
+  {
+    "path": "research_test_support.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [
+      "m4_experiments.py",
+      "scripts/audit_m6_sources.py",
+      "scripts/measure_m5.py",
+      "test_agent_harness.py",
+      "test_chatgpt_auth.py",
+      "test_evidence_repository.py",
+      "test_m2_contracts.py",
+      "test_m3_application.py",
+      "test_m4_evidence.py",
+      "test_m4_workflow.py",
+      "test_m5_recovery.py",
+      "test_m6_comparison.py",
+      "test_m6_frozen_trial.py",
+      "test_m7_maintenance.py",
+      "test_point_in_time.py",
+      "test_research_pipeline.py",
+      "test_research_rsi.py",
+      "test_research_sources.py",
+      "test_research_validation.py",
+      "test_research_workflow.py"
+    ],
+    "sha256": "3743ba92d8ca7490349c583a387da87001e7bcfe0d34da9ec2307616383ef4f1"
+  },
+  {
+    "path": "research_validation.py",
+    "category": "A",
+    "action": "retain",
+    "reason": "Six-core runtime or on-demand Skill.",
+    "imported_by": [
+      "scripts/run_independent_validation.py",
+      "scripts/run_quality_validation.py",
+      "test_research_validation.py"
+    ],
+    "sha256": "9c4cb2971a3278be3f3d672015ceda40e158a1f62b2fff245f7bd1f0032a8e96"
+  },
+  {
+    "path": "research_worker.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [
+      "aeternitas.py",
+      "scripts/container_app.py"
+    ],
+    "sha256": "2eef18ab981c3be9f46cf022d6817338e12e2b99ba25de073ce46cf716e11bba"
+  },
+  {
+    "path": "research_workflow.py",
+    "category": "A",
+    "action": "retain",
+    "reason": "Six-core runtime or on-demand Skill.",
+    "imported_by": [
+      "agent_harness.py",
+      "agent_tools.py",
+      "candidate_registry.py",
+      "infrastructure_rsi.py",
+      "lab_evaluation.py",
+      "lab_evaluation_demo.py",
+      "research_contract_profile.py",
+      "research_intelligence.py",
+      "research_quality.py",
+      "research_rsi.py",
+      "research_validation.py",
+      "scripts/audit_research_intelligence.py",
+      "scripts/check_agent_infrastructure.py",
+      "scripts/demo_memory_rsi.py",
+      "scripts/manage_candidates.py",
+      "scripts/run_quality_validation.py",
+      "test_agent_harness.py",
+      "test_lab_evaluation.py",
+      "test_oracle_evidence_contract.py",
+      "test_research_quality.py",
+      "test_research_rsi.py",
+      "test_research_validation.py",
+      "test_research_workflow.py"
+    ],
+    "sha256": "dae8e55f6948b6e717ae8291f43a7c9d394635a8d97d82338b1cdaa1e546877d"
+  },
+  {
+    "path": "run_repository.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [
+      "m6_frozen_trial.py",
+      "recoverable_pipeline.py",
+      "research_service.py",
+      "research_worker.py",
+      "scripts/accept_m5_live.py",
+      "scripts/audit_m5.py",
+      "scripts/audit_m6.py",
+      "scripts/measure_m5.py",
+      "test_m3_application.py",
+      "test_m5_recovery.py",
+      "test_m5_repository.py",
+      "test_m6_frozen_trial.py",
+      "test_m7_maintenance.py"
+    ],
+    "sha256": "892055b6a03dd1ffcca35463ad0d66d97c716a265be9654ef606af2d3b56a4b4"
+  },
+  {
+    "path": "scripts/accept_m5_live.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "f68369f85a2c7f5d3094fd6c0939cafa63a21733fb843985114fb9b8d7959cdc"
+  },
+  {
+    "path": "scripts/audit_m2.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "One-off acceptance/experiment tied to private historical run paths; not imported by retained runtime/tests.",
+    "imported_by": [],
+    "sha256": "470b931d7ae9731ea43be827bd763aabd37c9210a542addf4c7a8d06d5f2cb3e"
+  },
+  {
+    "path": "scripts/audit_m3.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "One-off acceptance/experiment tied to private historical run paths; not imported by retained runtime/tests.",
+    "imported_by": [],
+    "sha256": "8b139a574451c5d8e702f532e40ad9268a2799b14ed657f55ac00539f4cb41d5"
+  },
+  {
+    "path": "scripts/audit_m4.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "One-off acceptance/experiment tied to private historical run paths; not imported by retained runtime/tests.",
+    "imported_by": [],
+    "sha256": "96fb3da0da9386497437d0f87b086b37e33b6a21434a423d6c02eb51aceec278"
+  },
+  {
+    "path": "scripts/audit_m5.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "One-off acceptance/experiment tied to private historical run paths; not imported by retained runtime/tests.",
+    "imported_by": [
+      "scripts/audit_m6.py"
+    ],
+    "sha256": "3dd47d0b40a539bce8a18a70033db5c093775674df71ad83163e043ba3e75807"
+  },
+  {
+    "path": "scripts/audit_m6.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "One-off acceptance/experiment tied to private historical run paths; not imported by retained runtime/tests.",
+    "imported_by": [],
+    "sha256": "33c07c275bd078cb0f5e3571df591062fb03a882bbf55d02d4f42fe5b2d307e4"
+  },
+  {
+    "path": "scripts/audit_m6_sources.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Dotted import dependency from test_m6_source_campaign.py; source-time regression helper, retained.",
+    "imported_by": [],
+    "sha256": "507c20b9f43003ab727e9ed2d6fb5e5a3fbabcbdc2fb4940c6dfb160908e73ae"
+  },
+  {
+    "path": "scripts/audit_m7.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "One-off acceptance/experiment tied to private historical run paths; not imported by retained runtime/tests.",
+    "imported_by": [],
+    "sha256": "c5b12582f2f2b95e1ac411fed8a1272fb28c390972ebc8a8f1d4138a0bc8f517"
+  },
+  {
+    "path": "scripts/audit_research_intelligence.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "b5fdc851b7865c3d85c14f06eb1b5c7bee9446c769ad23d8c202258997589c3c"
+  },
+  {
+    "path": "scripts/backup_m7.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "42a3d72549aa0250643f37faa900dfe4d05c1d81fb7f98d2642ae5ff0a2e4d0b"
+  },
+  {
+    "path": "scripts/check_agent_infrastructure.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "e1083d43e2dae4a132f502f377983260bdee321b5d65dca4fa23050ed188710b"
+  },
+  {
+    "path": "scripts/compare_m6.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Retired price-prediction/teaching/one-off experiment and its caller closure; no remaining runtime import.",
+    "imported_by": [],
+    "sha256": "30ad3bc4aff822206dd05cfd0140fcbbdbde6bd35454bf560afd96b333324d5d"
+  },
+  {
+    "path": "scripts/complete_m1.sh",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "23bd2fce3c2043b7bc88c4dabea4d53840b31fb51d4e994e3cac7f0e98e23dc2"
+  },
+  {
+    "path": "scripts/container_app.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "8610d28ce49c193be4d2b77b32d9903eb3ba80e226ec830b414efc4fd2283004"
+  },
+  {
+    "path": "scripts/container_fixture.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "a1268e86472e64d35b36b2d8876b8b0019955bb3345bae5fda96fc293729e8e6"
+  },
+  {
+    "path": "scripts/container_init.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "2ebdd8f806a288fea4a826e39a5b4058415ebe383eb6214f277146eb8ea1075b"
+  },
+  {
+    "path": "scripts/demo_evaluation.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "3daf059b11feb8a2b30a06c20e27725acda60720fd62f97c9eadbeb8aa1eb4da"
+  },
+  {
+    "path": "scripts/demo_harness.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "9f798823bab9605c932ae6bdf52ee7a2a937e17611f766c2aeb6ca9999ea8240"
+  },
+  {
+    "path": "scripts/demo_memory_rsi.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "One-off acceptance/experiment tied to private historical run paths; not imported by retained runtime/tests.",
+    "imported_by": [],
+    "sha256": "beb8f49f5fb321faf84fec00af235f43a79343c24b70c68d659aab1884510272"
+  },
+  {
+    "path": "scripts/evaluate_m6.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "46640f5c349ba866cfecd22e4995f34ff00246fbeb199f3febc13fc6ef8e6629"
+  },
+  {
+    "path": "scripts/export_release_examples.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Retired v1.0 whitelist tar publisher/redacted report export and its obsolete fixed-asset tests; Core uses pyproject installation and dedicated current-tree/history audit.",
+    "imported_by": [],
+    "sha256": "1ff8b9dff29ea5b891120a9fa442d79f8f0dcac0362f6ca678260d99647c3295"
+  },
+  {
+    "path": "scripts/local_app.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "fb725899d0800d55fc9cfa535edc636235553453e6a629945f7bd95df4a36f4b"
+  },
+  {
+    "path": "scripts/maintain_m7.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "473396ba7db6c5291b36b4dd4533b126ba3b99384d251d7378800e46d0b8a231"
+  },
+  {
+    "path": "scripts/manage_candidates.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "d2b7be7870fcb0f1539d7af758e6d1552064c030c681e1d84824c79b2185abd9"
+  },
+  {
+    "path": "scripts/measure_m5.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "0eee0c6f227952d36db90a7967770d41b34012a01307e6f2b5fc3e61f3e05f07"
+  },
+  {
+    "path": "scripts/offline_guard/sitecustomize.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "19277b883b6abd3c9f44172f4d2a4882fbf5af2174189e6d59547e23554daccf"
+  },
+  {
+    "path": "scripts/package_release.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Retired v1.0 whitelist tar publisher/redacted report export and its obsolete fixed-asset tests; Core uses pyproject installation and dedicated current-tree/history audit.",
+    "imported_by": [
+      "scripts/audit_m7.py"
+    ],
+    "sha256": "d7e2c520453aa4b53b7a4baada89eb8f8d80c6c37d911554b3a200851065e983"
+  },
+  {
+    "path": "scripts/preview_m6.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "One-off acceptance/experiment tied to private historical run paths; not imported by retained runtime/tests.",
+    "imported_by": [],
+    "sha256": "e805a4cd9eac8b56f96a0355c582e04451652d6e265dd5b10e2f179207f3a49d"
+  },
+  {
+    "path": "scripts/probe_model_stream.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "f15f387ed5968a02e802e972e42f80165ac805f38b8ae3e31877d387bac62655"
+  },
+  {
+    "path": "scripts/replicate_m6.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Retired price-prediction/teaching/one-off experiment and its caller closure; no remaining runtime import.",
+    "imported_by": [],
+    "sha256": "40b85eb247d1c301fc8092ca362ed05d03d08ada9a987a9d845fa910f9a73146"
+  },
+  {
+    "path": "scripts/restore_m7.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "b68d5611aee159a9ffdfbf32a7135f46048aa6316d5784d6a2d06030152128ce"
+  },
+  {
+    "path": "scripts/run_independent_validation.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "d9874f2af3d32a9c1fe81ef5a941e97d8331b9c873bb5eb4e5494ac9a7c81949"
+  },
+  {
+    "path": "scripts/run_quality_validation.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "One-off acceptance/experiment tied to private historical run paths; not imported by retained runtime/tests.",
+    "imported_by": [],
+    "sha256": "d7b4b0b26c5ef3d2f895675dc3ca88f4711b445be10c9a4eab434616e42165a7"
+  },
+  {
+    "path": "scripts/run_research_rsi.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "0adb51870a21f6bd5ced48fb9e1f5962c09d6f79451296b4d669ec9b7929af96"
+  },
+  {
+    "path": "scripts/smoke_m7.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "decc9ffeaf3ace9d45c376e8e1b94185426bd42367d81ed099c2e92d8f3e8fb6"
+  },
+  {
+    "path": "sources/__init__.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "a485b936fe923af9ff6ef3035b715a97a33912fced73d255eae6eb535fae4775"
+  },
+  {
+    "path": "sources/sec.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "c8148e09cc4f00b8674b2e594c5e43091d77a32c0079e546b6cb6b6c751d24d0"
+  },
+  {
+    "path": "test_agent_harness.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [
+      "test_lab_evaluation.py"
+    ],
+    "sha256": "ce4e0f8ed8204efaf3ee94f7b77873127427e97dc3c9e061ae9bc51d2f773661"
+  },
+  {
+    "path": "test_analysis_repair.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "a90c0ed2501202bf5f315ea3f74e3983f4d031ac0945504520cb716d08672540"
+  },
+  {
+    "path": "test_chatgpt_auth.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "e3888c45f63182791707a8be3e6a1e69869e9fab0c1949a9aac7fde8bf2505b5"
+  },
+  {
+    "path": "test_chatgpt_stream_contract.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "024aba4d6f95276ef0670eb2512ab5f4da8c39e2a686b20052a12c6672a1d144"
+  },
+  {
+    "path": "test_company_identity.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "43bc929db15a6558d1c881bd3badf980c6130e6c2265dc07d78b0e7bcb2da801"
+  },
+  {
+    "path": "test_evidence_repository.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [
+      "test_m6_dataset_mode.py"
+    ],
+    "sha256": "510b60f91ef3ae3f23cb87ee9a8279430bc6641df6e02d47f09c52c532fced98"
+  },
+  {
+    "path": "test_fetch_financials.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "574ca4b83ade66479b4612953d7781f514b4c871bdb2606ea97f86536c2eae2f"
+  },
+  {
+    "path": "test_filing_fact_audit.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "9e13ea5eaf251002cb67efa6213e18d612e1634d4ae98efebc27144f28a77f35"
+  },
+  {
+    "path": "test_financial_facts.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [
+      "research_test_support.py",
+      "scripts/audit_m6_sources.py",
+      "test_evidence_repository.py",
+      "test_fetch_financials.py",
+      "test_lab_core_boundaries.py",
+      "test_research_workflow.py",
+      "test_sec_client.py"
+    ],
+    "sha256": "09e4eef5fac8d8752f0951646b8ebfe19e6d11895b0e0bd593709cae294f87b4"
+  },
+  {
+    "path": "test_infrastructure_telemetry.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "d30091cdb862e4f859f2cc389ab91ee047dfe4ad84e89e4050b0079b6b2dfaf1"
+  },
+  {
+    "path": "test_lab_agent_batch.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Retired price-prediction/teaching/one-off experiment and its caller closure; no remaining runtime import.",
+    "imported_by": [],
+    "sha256": "f6260eb182ad4cdc5e5677f2aa4985c2884df9717d9b3b122f2328a51cc9c3db"
+  },
+  {
+    "path": "test_lab_core_boundaries.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "fb06de4040539caad099feff294e8e2e62c488997992a171f40537e4ba699f0f"
+  },
+  {
+    "path": "test_lab_evaluation.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [
+      "test_infrastructure_telemetry.py",
+      "test_research_rsi.py"
+    ],
+    "sha256": "276ab799449360b71599edaadd8d96d9d607bcc55c664cd026e60e040e21da01"
+  },
+  {
+    "path": "test_lab_price_experiment.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Retired price-prediction/teaching/one-off experiment and its caller closure; no remaining runtime import.",
+    "imported_by": [],
+    "sha256": "fbff750d5020747f960c55b9e5f69bfc36fd6412916189c9bf5dd8067beb4c68"
+  },
+  {
+    "path": "test_m2_contracts.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "cdfad2f16b72a7a30afac848368ef756a1753a45967d7c38a92c1ffc163e9c2c"
+  },
+  {
+    "path": "test_m3_application.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [
+      "test_company_identity.py"
+    ],
+    "sha256": "062a787de3cbde1f7e591b82df09fbed49327c75dd1fab358ee917d3a397bc60"
+  },
+  {
+    "path": "test_m4_capabilities.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Retired price-prediction/teaching/one-off experiment and its caller closure; no remaining runtime import.",
+    "imported_by": [],
+    "sha256": "a063a0e164e8f84b69c7e5dcc87a32b6a92f8a68a6a263a864b3e1b8cbc5c6bd"
+  },
+  {
+    "path": "test_m4_contracts.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "1602e72a61f5be67649de0e0173309dd77184bac400e248077850ec3f04f911b"
+  },
+  {
+    "path": "test_m4_evidence.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "4d37564b820595500792cd93906327508675bd37a56ba065f183e123e13b20c2"
+  },
+  {
+    "path": "test_m4_workflow.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "b15b30a609ff2f2e504d80c07ed5ac61738e480dab3b2e8ff40e51efe1900e05"
+  },
+  {
+    "path": "test_m5_api.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "4403b026e5738e1ae08305e813d3611a58bf37b2304918772dff4b0658c206d4"
+  },
+  {
+    "path": "test_m5_measurement.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "ae24d229e8ca898ecc2cfe1dfd34690f8eb3bcc45d4e8db28badeb2e9effe6f4"
+  },
+  {
+    "path": "test_m5_plan_retry.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "23094003c01ff6ae9ba084b15ccdd4cbb351609a1d7e473aaceb474570bd9555"
+  },
+  {
+    "path": "test_m5_recovery.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [
+      "test_m5_plan_retry.py"
+    ],
+    "sha256": "98086d135f0e30ff26c22c7ad284af7d992c82a771e50eb5d80a8865391a4191"
+  },
+  {
+    "path": "test_m5_repository.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "a3845ee77cdf804e1a5dc3805dce79268863a8e209151be48cade8c9b9f2b67c"
+  },
+  {
+    "path": "test_m6_comparison.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Retired price-prediction/teaching/one-off experiment and its caller closure; no remaining runtime import.",
+    "imported_by": [],
+    "sha256": "336b906ab2acfdfcccc1af8ae561520a1699db25778dc20e994b149f70205b89"
+  },
+  {
+    "path": "test_m6_dataset_mode.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "0fd8c4cd9d78be228fc242af48953fc1dedd8e7bf91d8c8dc150d03d569db318"
+  },
+  {
+    "path": "test_m6_evaluations.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "b049739023a6de76d51708e3c3794d7e57f3efd6a5af57217cda9d5469a5a779"
+  },
+  {
+    "path": "test_m6_frozen_trial.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Retired price-prediction/teaching/one-off experiment and its caller closure; no remaining runtime import.",
+    "imported_by": [],
+    "sha256": "f38772049744eeb2e2e16618e55c63db48543c583e937891da01f021840dad99"
+  },
+  {
+    "path": "test_m6_prompt_versions.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "3213f20027f1c014bf0b876fbd05f9df745832facd4d15ee55f487fe15f027f8"
+  },
+  {
+    "path": "test_m6_source_campaign.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "500b320b6b12e6251eb42170e4a569866306a8761dd5c7d6fa16aa5a254383b4"
+  },
+  {
+    "path": "test_m7_delivery.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "72aa8d94a7fca5fad235ffba1d81bace331a83ac3e6f449e85f1a7baf490ccf7"
+  },
+  {
+    "path": "test_m7_maintenance.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "6f7eee31e3e9aab49313e7bf6c04ab1be9ebe13b415f955651f39f824ca203c4"
+  },
+  {
+    "path": "test_m7_postgres_init.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "f1377f6a5ab69bd073e4ad8e1cba6613dcdec8cc613e60d637e5065e2eb4c4e3"
+  },
+  {
+    "path": "test_m7_release.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Retired v1.0 whitelist tar publisher/redacted report export and its obsolete fixed-asset tests; Core uses pyproject installation and dedicated current-tree/history audit.",
+    "imported_by": [],
+    "sha256": "575b34cdd62441b65c508541efdc56f6d0f756e7b9ecee6c3d96f90ccfc57e94"
+  },
+  {
+    "path": "test_market_data.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "81bb5e753ed4f4dd89e7ff4c16d55edaa1b727619f2da5d178dca1fd7d9c102c"
+  },
+  {
+    "path": "test_oracle_evidence_contract.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "2909f468c37e0298f3d47b88bbac4f0bd200f1f063b65360de9e43f899fe2377"
+  },
+  {
+    "path": "test_point_in_time.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "b7cdd0eb560ece0739be7d5cd0212b1d5dd887d698c446bf512fc00815863e78"
+  },
+  {
+    "path": "test_prospective_snapshot.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Retired price-prediction/teaching/one-off experiment and its caller closure; no remaining runtime import.",
+    "imported_by": [],
+    "sha256": "34b4d2d333633a4cab095ce7e9fb41388c61dac862b9d67f012845447a2bfd52"
+  },
+  {
+    "path": "test_research_agent.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Retired price-prediction/teaching/one-off experiment and its caller closure; no remaining runtime import.",
+    "imported_by": [
+      "test_lab_agent_batch.py",
+      "test_prospective_snapshot.py"
+    ],
+    "sha256": "2bf73e277e779fd5776f63c6ff2dd0faa6a3a161e205d94a7017837c10f62cdc"
+  },
+  {
+    "path": "test_research_intelligence.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [
+      "test_research_quality.py"
+    ],
+    "sha256": "2bff8ab46d865749eb0b5459a7ef4dd1cffd4fd76027ae4cb32e58a7b99130a9"
+  },
+  {
+    "path": "test_research_memory.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "ba43d53911d187372e84aec06992b727072ead8e5c651e3c214b9cee90d5b448"
+  },
+  {
+    "path": "test_research_pipeline.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "955c3fb06aaef277f8d805db64be22bfd614ee4a5454fe678efb8d34a2766da1"
+  },
+  {
+    "path": "test_research_quality.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [
+      "test_oracle_evidence_contract.py"
+    ],
+    "sha256": "a532f78fc22d4ad6949bd9fb2287f0e46972ae3ca90395752fdff0434c212ae3"
+  },
+  {
+    "path": "test_research_rsi.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [
+      "test_research_validation.py"
+    ],
+    "sha256": "108a111855622afb28707a98a250c4078948983cec648d98abb2ca22dd3208bd"
+  },
+  {
+    "path": "test_research_sources.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "b8323ccc896a6a8657cde18a4bb620ec13eee731930fbc16342c345dfafc9e78"
+  },
+  {
+    "path": "test_research_validation.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "cac85f91b1bb3e35377c6d0c3c7f55d054f8cc5f099c684b6834e2645abfca94"
+  },
+  {
+    "path": "test_research_workflow.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [
+      "test_oracle_evidence_contract.py",
+      "test_research_quality.py",
+      "test_research_rsi.py",
+      "test_research_validation.py"
+    ],
+    "sha256": "650e39366ca478a6cce592f0719ea29a7947d0acfdf5fc963d90ba417e3338d6"
+  },
+  {
+    "path": "test_sec_client.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "f84cb76b58ac7ba580ea9e543c555b79aa71ddb5bd8dc0342a8140e2ac02f6ea"
+  },
+  {
+    "path": "test_time_machine.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "8b4685ec3792d9ec5b9321745283dcc76663f1016ed31797de4d01794cfb6083"
+  },
+  {
+    "path": "test_yahoo_csv.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "6709c1b7d8be12bdf9bd2b4e9845d191aec598fdc003d5c9d41efe59aa0ce7e2"
+  },
+  {
+    "path": "tests/fixtures/m2_sec_annual_v1.json",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "dce7f0f73e07c19b43cdb00af5c105d6710086f4a75e0df85f7a95b7a10f2027"
+  },
+  {
+    "path": "tests/fixtures/m3_no_annual_coverage_v1.json",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "850c5e5c55933603d2f4e959d92daae7682b782ed9a82e3d88319302f0e1f5be"
+  },
+  {
+    "path": "tests/fixtures/m4_duplicate_citation_v1.json",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "cfc9d6182420652ad566a64e0cc2b660c2905952f7468f29c4e8a97541d217e2"
+  },
+  {
+    "path": "tests/fixtures/m5_recorded_crash_shapes_v1.json",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "f40fe0d5713188fab99a133d25318148839784bc3a0ada5c7270974913a961ca"
+  },
+  {
+    "path": "tests/fixtures/m7_sources_v1.json",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "3c0d4a994a6907f86b8af394825b98fdab516ced68dfa66bc9e1a21cd9a91ef4"
+  },
+  {
+    "path": "tests/fixtures/market_calendar_synthetic_v1.json",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "60575a144c83f426d71912c7f22cc66f970e254253873e2b93a403ebb0db5c75"
+  },
+  {
+    "path": "tests/fixtures/market_daily_synthetic_v1.csv",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [],
+    "sha256": "7f7548a384f65ae267f8aef50fa1c2ee733f85c8737d3f77a0c4ed7514f850c9"
+  },
+  {
+    "path": "time_machine.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [
+      "aeternitas.py",
+      "research_agent.py",
+      "test_time_machine.py",
+      "test_yahoo_csv.py",
+      "yahoo_csv.py"
+    ],
+    "sha256": "3b6cfb89cbeecc171d3d65ecf3f66532cb6ce2345d872cdb55ae6635a16b281a"
+  },
+  {
+    "path": "yahoo_csv.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [
+      "aeternitas.py",
+      "test_yahoo_csv.py"
+    ],
+    "sha256": "2b59d2ae1a4518c4d5ee09bfa45340e52b51fdf322809efce9cb411d9933ea3d"
+  },
+  {
+    "path": ".gitignore",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "05e018a9489ee4498cc49400bf3613515946d11047b88fd753d8d2f180450b51"
+  },
+  {
+    "path": "README.md",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "d48760777d0dec4d83680a6bc6b1fd2ab8f6a0f29a17ed1a8df4e3d0ebd738da"
+  },
+  {
+    "path": "bad_record.json",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Retired price-prediction/teaching/one-off experiment and its caller closure; no remaining runtime import.",
+    "imported_by": [],
+    "sha256": "73085621a75ebdedf859f646ad6e9d663132ae061a4f171ac9d245de54b2d739"
+  },
+  {
+    "path": "bad_syntax.json",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Retired price-prediction/teaching/one-off experiment and its caller closure; no remaining runtime import.",
+    "imported_by": [],
+    "sha256": "245843abef9e72e7efac30138a994bf6301e7e1d7d7042a33d42e863d2638811"
+  },
+  {
+    "path": "data/filings.json",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Retired price-prediction/teaching/one-off experiment and its caller closure; no remaining runtime import.",
+    "imported_by": [],
+    "sha256": "406728b825602d9717f3eee0fbcef23a64685abd9095d431d07f0ad2ac1e94f0"
+  },
+  {
+    "path": "data/raw/aapl_submissions.json",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Retired price-prediction/teaching/one-off experiment and its caller closure; no remaining runtime import.",
+    "imported_by": [],
+    "sha256": "aad00f6aa75ba1405e0a34c788bdba9042281b2724fe1db3ff26f434b9a92e44"
+  },
+  {
+    "path": "data/raw/msft_submissions.json",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Retired price-prediction/teaching/one-off experiment and its caller closure; no remaining runtime import.",
+    "imported_by": [],
+    "sha256": "a5848ba348a3d3ae08c3c40bf4599379014be077911e6550ed3a8182a34a6a7b"
+  },
+  {
+    "path": "data/snapshot_manifest.json",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Retired price-prediction/teaching/one-off experiment and its caller closure; no remaining runtime import.",
+    "imported_by": [],
+    "sha256": "a699708d9b5ca605ab7ca6f40f20fcca26d84c172e01cf56d13dae1a8cab1336"
+  },
+  {
+    "path": "data_manifest.md",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Retired price-prediction/teaching/one-off experiment and its caller closure; no remaining runtime import.",
+    "imported_by": [],
+    "sha256": "9f75eddf1c96e8596ec434be5fae92bd218fbdab68c9121dd13dceff46c587ac"
+  },
+  {
+    "path": "debug_case.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Retired price-prediction/teaching/one-off experiment and its caller closure; no remaining runtime import.",
+    "imported_by": [],
+    "sha256": "66d8079310d35abd127b37ea419f974ce9e84b4a738fc0228600051ffb194a63"
+  },
+  {
+    "path": "domain.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Retired price-prediction/teaching/one-off experiment and its caller closure; no remaining runtime import.",
+    "imported_by": [
+      "debug_case.py",
+      "research.py",
+      "test_domain.py"
+    ],
+    "sha256": "e9da7085e605ef637c81fc54e136fa10f6e7c4498bd2ed031239fbff6d0242c1"
+  },
+  {
+    "path": "download_snapshots.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Retired price-prediction/teaching/one-off experiment and its caller closure; no remaining runtime import.",
+    "imported_by": [],
+    "sha256": "a154dee695e85d0cf9cd3b2b18cbfe86ba438dfa8fe7732943ce9506116519c8"
+  },
+  {
+    "path": "empty.json",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Retired price-prediction/teaching/one-off experiment and its caller closure; no remaining runtime import.",
+    "imported_by": [],
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  {
+    "path": "filing_parsing.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Retired price-prediction/teaching/one-off experiment and its caller closure; no remaining runtime import.",
+    "imported_by": [
+      "prepare_filings.py",
+      "test_filing_parsing.py"
+    ],
+    "sha256": "b3833746c6ef0cb9a3b8f8262bb4cc9e5fab23e0e27d5d0f666c68072df5ed5e"
+  },
+  {
+    "path": "models.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "Import/test/entrypoint dependency or compatibility infrastructure.",
+    "imported_by": [
+      "evidence_selection.py",
+      "filing_fact_audit.py",
+      "filing_source.py",
+      "financial_facts.py",
+      "sources/sec.py",
+      "debug_case.py",
+      "parsing.py",
+      "test_domain.py"
+    ],
+    "sha256": "27ecf9a9414971a85d3407222df05806346fa6bfc6b4ae62e65107a4b8e8b4de"
+  },
+  {
+    "path": "parsing.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Retired price-prediction/teaching/one-off experiment and its caller closure; no remaining runtime import.",
+    "imported_by": [
+      "research.py"
+    ],
+    "sha256": "ac053a735952c88c6cc2f59b3507f36bb974114f33393e6dbb83bbb1abd2a312"
+  },
+  {
+    "path": "practice.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Retired price-prediction/teaching/one-off experiment and its caller closure; no remaining runtime import.",
+    "imported_by": [],
+    "sha256": "98a2350d4df48936a2c30c8ec09dc4b208d32cc026f48e7caffc1b2d78d97597"
+  },
+  {
+    "path": "prepare_filings.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Retired price-prediction/teaching/one-off experiment and its caller closure; no remaining runtime import.",
+    "imported_by": [],
+    "sha256": "cae9b42b253ef2130ef15b1a9b79ff67a7b6beddf767f361381c3094be1d90f4"
+  },
+  {
+    "path": "real_sample.json",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Retired price-prediction/teaching/one-off experiment and its caller closure; no remaining runtime import.",
+    "imported_by": [],
+    "sha256": "c3125b32f0284975389f80fb83932825cd5b98f3e153c3fa24c65aa27bb920fe"
+  },
+  {
+    "path": "requirements.txt",
+    "category": "F",
+    "action": "retain",
+    "reason": "Documentation/operations history retained pending dedicated review; not deleted on age/name alone.",
+    "imported_by": [],
+    "sha256": "847ba08eab39540aa7bd26bce8ec76275fd9b802186f266cb7b8e0169dc97e09"
+  },
+  {
+    "path": "research.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Retired price-prediction/teaching/one-off experiment and its caller closure; no remaining runtime import.",
+    "imported_by": [],
+    "sha256": "1ca8dd5df23c78ce6ba49e2860356f5315df22d2f8d46925508b49db48f444cd"
+  },
+  {
+    "path": "s04_debug_notes.md",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Retired price-prediction/teaching/one-off experiment and its caller closure; no remaining runtime import.",
+    "imported_by": [],
+    "sha256": "66c5b8b1eff416a0d05eb85ec568193843e11c118424b8a451654412ba74a85d"
+  },
+  {
+    "path": "sample.json",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Retired price-prediction/teaching/one-off experiment and its caller closure; no remaining runtime import.",
+    "imported_by": [],
+    "sha256": "10151e7bba24205e06919fb04f957a49bed352b8c11a88ce7f27d170673809cc"
+  },
+  {
+    "path": "test_domain.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Retired price-prediction/teaching/one-off experiment and its caller closure; no remaining runtime import.",
+    "imported_by": [],
+    "sha256": "0d7e900af45771609dfeb405ed1b3ca82071b2928d00d902305c875edec5530a"
+  },
+  {
+    "path": "test_filing_parsing.py",
+    "category": "C",
+    "action": "remove_from_current_tree",
+    "reason": "Retired price-prediction/teaching/one-off experiment and its caller closure; no remaining runtime import.",
+    "imported_by": [],
+    "sha256": "b80d9ac4547b8c5c647b28c357d8f9ebc22bd9cb83aa9f7ef2c7c57c6e3382bb"
+  },
+  {
+    "path": ".env",
+    "category": "E",
+    "action": "leave_local_exclude_git",
+    "reason": "Local state/cache; not publishable; not cleaned."
+  },
+  {
+    "path": ".venv",
+    "category": "E",
+    "action": "leave_local_exclude_git",
+    "reason": "Local state/cache; not publishable; not cleaned."
+  },
+  {
+    "path": "data/live",
+    "category": "E",
+    "action": "leave_local_exclude_git",
+    "reason": "Local state/cache; not publishable; not cleaned."
+  },
+  {
+    "path": ".local-container",
+    "category": "E",
+    "action": "leave_local_exclude_git",
+    "reason": "Local state/cache; not publishable; not cleaned."
+  },
+  {
+    "path": "__pycache__",
+    "category": "D",
+    "action": "leave_local_exclude_git",
+    "reason": "Local state/cache; not publishable; not cleaned."
+  },
+  {
+    "path": ".pytest_cache",
+    "category": "D",
+    "action": "leave_local_exclude_git",
+    "reason": "Local state/cache; not publishable; not cleaned."
+  },
+  {
+    "path": "MANIFEST.in",
+    "category": "B",
+    "action": "retain",
+    "reason": "New reviewed Core consolidation entrypoint, regression, dependency lock, security audit or documentation."
+  },
+  {
+    "path": "core_cli.py",
+    "category": "A",
+    "action": "retain",
+    "reason": "New reviewed Core consolidation entrypoint, regression, dependency lock, security audit or documentation."
+  },
+  {
+    "path": "diagnostics/event-0001.json",
+    "category": "B",
+    "action": "retain",
+    "reason": "New reviewed Core consolidation entrypoint, regression, dependency lock, security audit or documentation."
+  },
+  {
+    "path": "diagnostics/event-0002.json",
+    "category": "B",
+    "action": "retain",
+    "reason": "New reviewed Core consolidation entrypoint, regression, dependency lock, security audit or documentation."
+  },
+  {
+    "path": "diagnostics/event-0003.json",
+    "category": "B",
+    "action": "retain",
+    "reason": "New reviewed Core consolidation entrypoint, regression, dependency lock, security audit or documentation."
+  },
+  {
+    "path": "diagnostics/event-0004.json",
+    "category": "B",
+    "action": "retain",
+    "reason": "New reviewed Core consolidation entrypoint, regression, dependency lock, security audit or documentation."
+  },
+  {
+    "path": "diagnostics/event-0005.json",
+    "category": "B",
+    "action": "retain",
+    "reason": "New reviewed Core consolidation entrypoint, regression, dependency lock, security audit or documentation."
+  },
+  {
+    "path": "diagnostics/event-0006.json",
+    "category": "B",
+    "action": "retain",
+    "reason": "New reviewed Core consolidation entrypoint, regression, dependency lock, security audit or documentation."
+  },
+  {
+    "path": "diagnostics/event-0007.json",
+    "category": "B",
+    "action": "retain",
+    "reason": "New reviewed Core consolidation entrypoint, regression, dependency lock, security audit or documentation."
+  },
+  {
+    "path": "diagnostics/event-0008.json",
+    "category": "B",
+    "action": "retain",
+    "reason": "New reviewed Core consolidation entrypoint, regression, dependency lock, security audit or documentation."
+  },
+  {
+    "path": "diagnostics/event-0009.json",
+    "category": "B",
+    "action": "retain",
+    "reason": "New reviewed Core consolidation entrypoint, regression, dependency lock, security audit or documentation."
+  },
+  {
+    "path": "diagnostics/event-0010.json",
+    "category": "B",
+    "action": "retain",
+    "reason": "New reviewed Core consolidation entrypoint, regression, dependency lock, security audit or documentation."
+  },
+  {
+    "path": "diagnostics/event-0011.json",
+    "category": "B",
+    "action": "retain",
+    "reason": "New reviewed Core consolidation entrypoint, regression, dependency lock, security audit or documentation."
+  },
+  {
+    "path": "diagnostics/event-0012.json",
+    "category": "B",
+    "action": "retain",
+    "reason": "New reviewed Core consolidation entrypoint, regression, dependency lock, security audit or documentation."
+  },
+  {
+    "path": "diagnostics/event-0013.json",
+    "category": "B",
+    "action": "retain",
+    "reason": "New reviewed Core consolidation entrypoint, regression, dependency lock, security audit or documentation."
+  },
+  {
+    "path": "diagnostics/event-0014.json",
+    "category": "B",
+    "action": "retain",
+    "reason": "New reviewed Core consolidation entrypoint, regression, dependency lock, security audit or documentation."
+  },
+  {
+    "path": "docs/CORE_FILE_INVENTORY.json",
+    "category": "B",
+    "action": "retain",
+    "reason": "New reviewed Core consolidation entrypoint, regression, dependency lock, security audit or documentation."
+  },
+  {
+    "path": "docs/CORE_FILE_INVENTORY.md",
+    "category": "B",
+    "action": "retain",
+    "reason": "New reviewed Core consolidation entrypoint, regression, dependency lock, security audit or documentation."
+  },
+  {
+    "path": "pyproject.toml",
+    "category": "B",
+    "action": "retain",
+    "reason": "New reviewed Core consolidation entrypoint, regression, dependency lock, security audit or documentation."
+  },
+  {
+    "path": "requirements-core.txt",
+    "category": "B",
+    "action": "retain",
+    "reason": "New reviewed Core consolidation entrypoint, regression, dependency lock, security audit or documentation."
+  },
+  {
+    "path": "requirements-observability.txt",
+    "category": "B",
+    "action": "retain",
+    "reason": "New reviewed Core consolidation entrypoint, regression, dependency lock, security audit or documentation."
+  },
+  {
+    "path": "requirements.lock",
+    "category": "B",
+    "action": "retain",
+    "reason": "New reviewed Core consolidation entrypoint, regression, dependency lock, security audit or documentation."
+  },
+  {
+    "path": "scripts/check_core_release.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "New reviewed Core consolidation entrypoint, regression, dependency lock, security audit or documentation."
+  },
+  {
+    "path": "scripts/core_smoke.py",
+    "category": "A",
+    "action": "retain",
+    "reason": "New reviewed Core consolidation entrypoint, regression, dependency lock, security audit or documentation."
+  },
+  {
+    "path": "test_core_release.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "New reviewed Core consolidation entrypoint, regression, dependency lock, security audit or documentation."
+  },
+  {
+    "path": "test_core_runtime.py",
+    "category": "B",
+    "action": "retain",
+    "reason": "New reviewed Core consolidation entrypoint, regression, dependency lock, security audit or documentation."
+  },
+  {
+    "path": "config/quality_policy.example.json",
+    "category": "B",
+    "action": "retain",
+    "reason": "Reviewed minimal quality-policy example for the current Core research configuration."
+  }
+]

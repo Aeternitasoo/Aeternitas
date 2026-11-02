@@ -1,0 +1,28 @@
+{
+  "case_version": "m6-case-v1",
+  "manifest_version": "m6-holdout-manifest-v1",
+  "split": "holdout",
+  "case_count": 4,
+  "scenario_count": 8,
+  "frozen_on": "2026-10-23",
+  "execution_status": "not_run_at_freeze",
+  "material_mode": "synthetic",
+  "network": "disabled_by_controlled_transports",
+  "credentials": "none",
+  "files": {
+    "H01.json": "1d928a8f6d33c6485bd2136e5cf92b6e6febbb774660bff948fea3176f861d65",
+    "H02.json": "c3643fa6ae3af7a42d52eb2d5a7e8997f71b21d306fd1c7045849441a91502a6",
+    "H03.json": "b4eaa2b1b6980e3bbdeadb281a1f0c036c938f806221c1ebeb6fd2ee489e88ec",
+    "H04.json": "a87f701a9d78a9a82c53c74d38c058cc53dae9c5dac656c9d18f80b318dd07ad"
+  },
+  "protocol": {
+    "author": "independent_holdout_subagent",
+    "target_answers_shared_with_implementation_agents": false,
+    "execution_gate": "Root must explicitly declare development and implementation frozen and authorize first holdout run.",
+    "production_functions_executed_before_freeze": false,
+    "development_results_used_to_adjust_targets": false,
+    "case_modification_after_first_run": "Forbidden; preserve first results and register seen-case status before any implementation repair.",
+    "semantic_review": "Assistant engineering judgment is recorded separately; hard-rule checks do not certify semantic correctness or user independence.",
+    "sample_limit": "Four synthetic holdout cases do not establish market-wide correctness."
+  }
+}

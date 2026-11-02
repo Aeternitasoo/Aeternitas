@@ -1,0 +1,143 @@
+{
+  "case_version": "m6-case-v1",
+  "id": "D06",
+  "split": "development",
+  "company": "AAPL",
+  "description": "Unknown evidence identity, altered source quotation and unverified numeric prose are rejected.",
+  "material": {
+    "mode": "synthetic",
+    "notice": "Controlled invented observations; not actual financial data, news or model output."
+  },
+  "scenarios": [
+    {
+      "id": "valid-exact-citation",
+      "operation": "validate_analysis",
+      "input": {
+        "result": {
+          "claims": [
+            {
+              "text": "公司仍面临供应与竞争方面的不确定性",
+              "stance": "challenge",
+              "citations": [
+                {
+                  "evidence_id": "F-controlled-source",
+                  "quote": "supply uncertainty and intense market competition"
+                }
+              ]
+            }
+          ],
+          "gaps": []
+        },
+        "evidence": [
+          {
+            "id": "F-controlled-source",
+            "kind": "filing",
+            "text": "The company faces supply uncertainty and intense market competition."
+          }
+        ]
+      },
+      "expected": {
+        "outcome": "accepted",
+        "matches": {
+          "/claims/0/stance": "challenge"
+        }
+      }
+    },
+    {
+      "id": "wrong-citation-set",
+      "operation": "validate_analysis",
+      "input": {
+        "result": {
+          "claims": [
+            {
+              "text": "公司仍面临供应与竞争方面的不确定性",
+              "stance": "challenge",
+              "citations": [
+                {
+                  "evidence_id": "F-other-company",
+                  "quote": "supply uncertainty and intense market competition"
+                }
+              ]
+            }
+          ],
+          "gaps": []
+        },
+        "evidence": [
+          {
+            "id": "F-controlled-source",
+            "kind": "filing",
+            "text": "The company faces supply uncertainty and intense market competition."
+          }
+        ]
+      },
+      "expected": {
+        "outcome": "rejected",
+        "error_contains": "outside this role"
+      }
+    },
+    {
+      "id": "not-verbatim-quote",
+      "operation": "validate_analysis",
+      "input": {
+        "result": {
+          "claims": [
+            {
+              "text": "公司仍面临供应与竞争方面的不确定性",
+              "stance": "challenge",
+              "citations": [
+                {
+                  "evidence_id": "F-controlled-source",
+                  "quote": "supply certainty and monopoly market position"
+                }
+              ]
+            }
+          ],
+          "gaps": []
+        },
+        "evidence": [
+          {
+            "id": "F-controlled-source",
+            "kind": "filing",
+            "text": "The company faces supply uncertainty and intense market competition."
+          }
+        ]
+      },
+      "expected": {
+        "outcome": "rejected",
+        "error_contains": "not an exact"
+      }
+    },
+    {
+      "id": "unverified-financial-number",
+      "operation": "validate_analysis",
+      "input": {
+        "result": {
+          "claims": [
+            {
+              "text": "收入增长百分之二十",
+              "stance": "challenge",
+              "citations": [
+                {
+                  "evidence_id": "F-controlled-source",
+                  "quote": "supply uncertainty and intense market competition"
+                }
+              ]
+            }
+          ],
+          "gaps": []
+        },
+        "evidence": [
+          {
+            "id": "F-controlled-source",
+            "kind": "filing",
+            "text": "The company faces supply uncertainty and intense market competition."
+          }
+        ]
+      },
+      "expected": {
+        "outcome": "rejected",
+        "error_contains": "Put numbers"
+      }
+    }
+  ]
+}

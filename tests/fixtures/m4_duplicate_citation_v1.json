@@ -1,0 +1,13 @@
+{
+  "fixture_version": "m4-duplicate-citation-v1",
+  "origin": "Sanitized shape observed in real synthesis attempt 1 on 2026-10-22; dynamic identities and source text replaced with explicit synthetic content",
+  "error": "claims[0].citations[1].evidence_id: Duplicate citation evidence id within claim",
+  "evidence": [{"id": "E-controlled", "kind": "filing", "title": "Explicitly synthetic source", "published_at": "2025-01-01", "text": "Synthetic statement of sufficient supply. Synthetic statement of production limitations."}],
+  "bad_result": {"claims": [{"text": "受控材料包含需要进一步核实的供给描述", "stance": "neutral", "citations": [
+    {"evidence_id": "E-controlled", "quote": "Synthetic statement of sufficient supply."},
+    {"evidence_id": "E-controlled", "quote": "Synthetic statement of production limitations."}
+  ]}], "gaps": []},
+  "fixed_result": {"claims": [{"text": "受控材料包含需要进一步核实的供给描述", "stance": "neutral", "citations": [
+    {"evidence_id": "E-controlled", "quote": "Synthetic statement of sufficient supply."}
+  ]}], "gaps": ["缺少能够解释供给描述差异的原始依据"]}
+}

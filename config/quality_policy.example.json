@@ -1,0 +1,67 @@
+{
+  "topics": {
+    "MSFT": [
+      {
+        "id": "operating",
+        "terms": [
+          "data center",
+          "capital expenditures",
+          "revenue"
+        ],
+        "purpose": "support"
+      },
+      {
+        "id": "risk",
+        "terms": [
+          "risk",
+          "competition",
+          "uncertainty"
+        ],
+        "purpose": "counterevidence"
+      }
+    ],
+    "NVDA": [
+      {
+        "id": "operating",
+        "terms": [
+          "data center",
+          "capital expenditures",
+          "revenue"
+        ],
+        "purpose": "support"
+      },
+      {
+        "id": "risk",
+        "terms": [
+          "risk",
+          "competition",
+          "uncertainty"
+        ],
+        "purpose": "counterevidence"
+      }
+    ],
+    "VST": [
+      {
+        "id": "operating",
+        "terms": [
+          "data center",
+          "capital expenditures",
+          "revenue"
+        ],
+        "purpose": "support"
+      },
+      {
+        "id": "risk",
+        "terms": [
+          "risk",
+          "competition",
+          "uncertainty"
+        ],
+        "purpose": "counterevidence"
+      }
+    ]
+  },
+  "metrics": [],
+  "calculations": [],
+  "max_hits": 2
+}

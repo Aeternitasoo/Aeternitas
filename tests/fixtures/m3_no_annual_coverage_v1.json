@@ -1,0 +1,14 @@
+{
+  "fixture_version": "m3-no-annual-coverage-v1",
+  "origin": "Sanitized real local API/worker failure observed 2026-10-21; dynamic run identity and timestamps removed",
+  "request": {"ticker": "AAPL", "as_of_date": "1900-01-01", "question": "Coverage regression", "refresh": true, "news_days": 14, "deadline": 60},
+  "expected": {
+    "status": "failed",
+    "step": "financials",
+    "model_attempts": 0,
+    "model_usage": [],
+    "dataset_id": null,
+    "error_suffix": "No supported annual USD revenue facts before cutoff; check coverage / tags",
+    "report_http_status": 409
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "case_version": "m6-case-v1",
+  "id": "H02",
+  "split": "holdout",
+  "company": "MSFT",
+  "description": "A two-day local publication window with a provider revision, weak company association, a wrong company and both time edges.",
+  "material": {
+    "mode": "synthetic",
+    "not_real_news": true,
+    "design": "One provider revision is inside the cutoff; a different article is exactly at the local start boundary. Retrieval time is intentionally absent from publication eligibility."
+  },
+  "scenarios": [
+    {
+      "id": "window_revision_and_association",
+      "operation": "normalize_news",
+      "input": {
+        "rows": [
+          {
+            "id": 700,
+            "datetime": 1740757200,
+            "headline": "Synthetic service review, old wording",
+            "summary": "Earlier provider wording; not a full article.",
+            "related": "MSFT",
+            "url": "https://example.invalid/service-review?utm_source=old"
+          },
+          {
+            "id": 700,
+            "datetime": 1740844200,
+            "headline": "Synthetic service review, updated wording",
+            "summary": "Updated provider summary; full text was not fetched.",
+            "related": "MSFT",
+            "url": "https://example.invalid/service-review?utm_source=update#top"
+          },
+          {
+            "id": 702,
+            "datetime": 1740672000,
+            "headline": "Synthetic lower window edge",
+            "summary": "This association is supplied by the query only.",
+            "related": "",
+            "url": "https://example.invalid/lower-window-edge"
+          },
+          {
+            "id": 703,
+            "datetime": 1740844800,
+            "headline": "Synthetic next local day",
+            "summary": "Outside the stated local research date.",
+            "related": "MSFT",
+            "url": "https://example.invalid/next-day"
+          },
+          {
+            "id": 704,
+            "datetime": 1740823200,
+            "headline": "Synthetic other company",
+            "summary": "Explicitly related to a different company.",
+            "related": "AAPL",
+            "url": "https://example.invalid/other-company"
+          },
+          {
+            "id": 705,
+            "datetime": 1740671999,
+            "headline": "Synthetic before window",
+            "summary": "One second before the local start date.",
+            "related": "MSFT",
+            "url": "https://example.invalid/before-window"
+          }
+        ],
+        "ticker": "MSFT",
+        "cik": "0000789019",
+        "as_of_date": "2025-03-01",
+        "days": 2
+      },
+      "expected": {
+        "outcome": "accepted",
+        "matches": {
+          "/0/title": "Synthetic service review, updated wording",
+          "/0/published_at": "2025-03-01T15:50:00+00:00",
+          "/0/text_level": "provider_summary",
+          "/0/locator/company_match": "related_field",
+          "/0/locator/canonical_url": "https://example.invalid/service-review",
+          "/1/title": "Synthetic lower window edge",
+          "/1/locator/company_match": "provider_query_only",
+          "/1/company_cik": "0000789019"
+        },
+        "absent": [
+          "/2"
+        ]
+      }
+    },
+    {
+      "id": "error_object_is_not_empty_coverage",
+      "operation": "normalize_news",
+      "input": {
+        "rows": {
+          "error": "Synthetic entitlement boundary, not a news list"
+        },
+        "ticker": "MSFT",
+        "cik": "0000789019",
+        "as_of_date": "2025-03-01",
+        "days": 2
+      },
+      "expected": {
+        "outcome": "rejected",
+        "error_contains": "News must be a list"
+      }
+    }
+  ]
+}
