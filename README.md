@@ -2,8 +2,6 @@
 
 面向电力、AI 算力与云计算产业链的 AI 投资研究系统。通过真实来源、受控工具、可追溯报告、长期记忆、执行轨迹和独立评估，研究产业传导、公司盈利及风险。
 
-长期协作规则以 [AGENTS.md](AGENTS.md) 为准；实际历史与验收见唯一 [Progress](AI_Research_System_Progress.md)。Core 软件包版本为 **2.0.0**，不代表成熟自主研究或 RSI 已完成，本版本采用独立干净根提交；旧私有项目历史与Release不属于本仓库。
-
 ## 核心架构
 
 | 模块 | 实际入口 |
@@ -115,15 +113,6 @@ python -B scripts/check_core_release.py --output /absolute/new-security-report.j
 
 Smoke 使用脚本化决策，实际执行 Harness、Skills、Evaluation、Registry 和可选真实本地 Mem0，不是 GPT 研究。没有显式隔离 PostgreSQL 配置的兼容测试跳过；集群初始化测试单列不执行。可选 Mem0 未配置会跳过 SDK 测试。不能将这些状态算作生产验证。
 
-## 当前限制与下一步
-
-- 来源关键词选择可能遗漏经营证据或误取 XBRL 分类标签。
-- 财务指标覆盖、独立语义审核不足，部分报告只能为不完整研究。
-- 记忆边际价值、长期可靠性与通用 RSI 尚未验证。
-- Langfuse 云端未连接；新 Core 数据库／容器部署未重新验收。
-- 下一步先复核“经营 backlog 与收购无形资产分类标签混淆”的实际取证问题，再开展冻结独立研究评价，不增加框架替代质量验证。
-
-
 ## 公开分发与复现边界
 
 项目：https://github.com/Aeternitasoo/Aeternitas
@@ -134,4 +123,3 @@ Smoke 使用脚本化决策，实际执行 Harness、Skills、Evaluation、Regis
 
 首次体验先执行capabilities、plan和core_smoke，无需真实模型密钥。
 请只在本机配置凭据，不提交.env、供应商原件、完整模型输入输出或记忆库。
-公开可见不等于授予项目开源许可，当前没有选择项目级开源许可证。
